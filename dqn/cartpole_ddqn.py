@@ -159,7 +159,7 @@ def get_screen():
 """
 描画のテスト
 """
-# env.reset()
+env.reset()
 # plt.figure()
 # plt.imshow(get_screen().cpu().squeeze(0).permute(1, 2, 0).numpy(),
 #            interpolation='none')
@@ -286,7 +286,7 @@ def optimize_model():
     optimizer.step()
 
 
-num_episodes = 50
+num_episodes = 100
 for i_episode in range(num_episodes):
     # 環境と状態を初期化
     env.reset()
