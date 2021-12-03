@@ -136,7 +136,7 @@ def get_screen():
     screen = env.render(mode='rgb_array').transpose((2, 0, 1))
     # スクリーンの下半分にカートがあるので、上下をトリミング
     _, screen_height, screen_width = screen.shape
-    screen = screen[:, int(screen_height*0.4):int(screen_height * 0.8)]
+    screen = screen[:, int(screen_height * 0.4):int(screen_height * 0.8)]
     view_width = int(screen_width * 0.6)
     cart_location = get_cart_location(screen_width)
     if cart_location < view_width // 2:
@@ -286,7 +286,7 @@ def optimize_model():
     optimizer.step()
 
 
-num_episodes = 100
+num_episodes = 500
 for i_episode in range(num_episodes):
     # 環境と状態を初期化
     env.reset()
