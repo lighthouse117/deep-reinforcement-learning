@@ -22,6 +22,13 @@ class Agent:
         return state
 
     def learn(self, state, action, reward, state_next):
+        # print("state:")
+        # self.print_state(state)
+        # if state_next is not None:
+        #     print("state_next: ")
+        #     self.print_state(state_next)
+        # print(f"action: {action}")
+        # print(f"reward: {reward}")
         self.brain.update_Q(state, action, reward, state_next)
         # print(f"{self.name} Q値を更新")
 

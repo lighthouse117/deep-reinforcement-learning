@@ -17,7 +17,7 @@ REQUESTS = [
     [5, 2, 4]
 ]
 
-MAX_EPISODES = 30001
+MAX_EPISODES = 20001
 MAX_STEPS = 100
 
 GREEDY_CYCLE = 100
@@ -158,7 +158,11 @@ class Environment:
         remaining = np.sum(self.stock)
         print(f"食品の残り個数: {remaining}")
 
-        reward = -(deviation + remaining)
+        if deviation + remaining == 0:
+            reward = 100
+        else:
+            reward = (1 / (deviation + remaining)) * 100
+        # reward = -(deviation + remaining)
         print(f"報酬: {reward:.1f}")
 
         return reward
@@ -199,14 +203,16 @@ def run():
 
             if done:
                 env.learn(states, actions, reward, states_next)
+                print(f"要したステップ数: {step}")
                 break
 
             else:
                 if step == MAX_STEPS - 1:
                     print("\n最大ステップ数を超えました")
-                    reward = env.get_reward()
-                    print(reward)
+                    # reward = env.get_reward()
+                    reward -= 100
                     env.learn(states, actions, reward, states_next)
+                    break
 
             env.learn(states, actions, reward, states_next)
             states = states_next
