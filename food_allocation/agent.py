@@ -70,12 +70,16 @@ class Agent:
     def get_state(self, env_state):
         personal_state = []
 
+        section = 1 / (len(Satisfaction) - 1)
         satisfactions = self.stock / self.REQUESTS
+
         for satisfaction in satisfactions:
             # print(f"satisfaction = {diff}")
-            if satisfaction < 0.5:
+            if satisfaction == 0:
                 personal_state.append(Satisfaction.NOT)
-            elif satisfaction < 1.0:
+            elif satisfaction < section:
+                personal_state.append(Satisfaction.SLIGHT)
+            elif satisfaction < 1:
                 personal_state.append(Satisfaction.SOMEWHAT)
             else:
                 personal_state.append(Satisfaction.PERFECT)
