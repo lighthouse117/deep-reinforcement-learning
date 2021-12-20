@@ -13,13 +13,26 @@ MAX_UNITS = max(FOODS)
 AGENTS_COUNT = 3
 
 REQUESTS = [
+<<<<<<< HEAD
+    [6, 3, 2],
+    [4, 4, 7],
+    [3, 2, 4]
+]
+
+MAX_EPISODES = 1
+=======
     [10, 10, 10],
     [10, 10, 10],
     [10, 10, 10]
 ]
 
 MAX_EPISODES = 100001
+<<<<<<< HEAD
 MAX_STEPS = 200
+=======
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
+MAX_STEPS = 100
+>>>>>>> 1f57782092a75412db11e93b33c6fa59953b9027
 
 GREEDY_CYCLE = 100
 
@@ -158,25 +171,45 @@ class Environment:
             satisfaction = agent.get_satisfaction()
             satisfactions.append(satisfaction)
             if greedy:
+<<<<<<< HEAD
+                print(f"{agent.name}: 満足度{satisfaction:.1f} 在庫{agent.stock}")
+=======
                 # print(f"{agent.name}の満足度: {satisfaction:.1f} %")
                 pass
 
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
         deviation = np.std(np.array(satisfactions))
 
         remaining = np.sum(self.stock)
 
+<<<<<<< HEAD
         # if deviation + remaining == 0:
         #     reward = 100
         # else:
         #     reward = (1 / (deviation + remaining * 100)) * 100
 
         reward = - (deviation + remaining)
+=======
+        if deviation + remaining == 0:
+            reward = 100
+        else:
+            reward = (1 / (deviation + remaining * 100)) * 100
+<<<<<<< HEAD
+        # reward = -(deviation + remaining)
+
+        if greedy:
+            print(f"満足度の標準偏差: {deviation:.1f}")
+            print(f"食品の残り個数: {remaining}")
+            print(f"報酬: {reward:.1f}")
+=======
+>>>>>>> 1f57782092a75412db11e93b33c6fa59953b9027
 
         if greedy:
             # print(f"満足度の標準偏差: {deviation:.1f}")
             # print(f"食品の残り個数: {remaining}")
             print(f"報酬: {reward:.1f}")
             pass
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
 
         return reward
 
@@ -207,7 +240,11 @@ def run():
         else:
             greedy = False
             # print(
+<<<<<<< HEAD
+            #     f"-------------- Episode:{episode} --------------")
+=======
             # f"-------------- Episode:{episode} --------------")
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
 
         states = env.reset()
 
@@ -222,11 +259,53 @@ def run():
 
             if not greedy:
                 env.learn(states, actions, reward, states_next)
+<<<<<<< HEAD
+                # print(f"要したステップ数: {step}")
+=======
 
+<<<<<<< HEAD
             if done or step == MAX_STEPS - 1:
                 break
 
+=======
+            if done:
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
+                break
+
+            else:
+                if step == MAX_STEPS - 1:
+                    print("\n最大ステップ数を超えました")
+<<<<<<< HEAD
+                    reward = env.get_reward(greedy)
+                    # reward -= 100
+                    env.learn(states, actions, reward, states_next)
+=======
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
+                    break
+                else:
+
+<<<<<<< HEAD
+                    env.learn(states, actions, reward, states_next)
+                    states = states_next
+
+        if greedy:
+            result_reward.append(reward)
+
+    if greedy:
+        x = np.array(
+            [i for i in range(len(result_reward))])
+        y = np.array(result_reward)
+        plt.plot(x, y)
+        # plt.ylim(0,)
+        # plt.title("")
+        plt.xlabel("Episode")
+        plt.ylabel("Reward")
+        # plt.text(800, self.min_distance_history[0], "ε={}".format(EPSILON))
+        plt.show()
+=======
+>>>>>>> 1f57782092a75412db11e93b33c6fa59953b9027
             states = states_next
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
 
         if greedy:
             # print(f"要したステップ数: {step}")

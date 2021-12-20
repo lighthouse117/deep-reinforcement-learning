@@ -5,8 +5,18 @@ import numpy as np
 
 from status import StockRemaining, StockChange, Satisfaction
 
+<<<<<<< HEAD
 GAMMA = 0.9
 ALPHA = 0.005
+=======
+<<<<<<< HEAD
+GAMMA = 0.98
+ALPHA = 0.05
+=======
+GAMMA = 0.95
+ALPHA = 0.01
+>>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
+>>>>>>> 1f57782092a75412db11e93b33c6fa59953b9027
 
 EPSILON = 0.9
 
