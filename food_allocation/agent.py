@@ -85,7 +85,7 @@ class Agent:
 
         state = env_state + tuple(personal_state)
         # print(f"{self.name} state: {state}")
-        # self.print_state(state)
+        self.print_state(state)
         return state
 
     def get_food(self, food):
