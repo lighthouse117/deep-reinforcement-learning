@@ -32,25 +32,22 @@ class Agent:
         self.brain.update_Q(state, action, reward, state_next)
         # print(f"{self.name} Q値を更新")
 
+    # 行動（どの食品を取得するか）を決定
     def decide_action(self, state, env_stock, greedy):
-        if self.done:
-            # 既にとれる行動がもうないので「何もしない」
-            action = len(self.stock)
-            # print(f"{self.name} とれる行動がありません")
-            return action
+
+        # 要求が満たされた後も自由に行動して学習をさせる
+        # （十分に獲得したのにさらに手を出そうとした場合、罰を与える）
 
         if np.all(self.current_requests == 0):
-            # 要求がすべて満たされてる場合は「何もしない」
-            action = len(self.stock)
+            # 要求がすべて満たされたことを記録
             self.done = True
             # print(f"{self.name} 要求がすべて満たされました")
-            return action
 
         # 行動の候補
         action_options = []
 
-        # 要求個数が0でない & 本部に在庫がある食品を候補に入れる
-        for food, amount in enumerate(self.current_requests):
+        # 自分が要求していた食品（既に満たされたかは関係ない） & 本部に在庫がある食品を候補に入れる
+        for food, amount in enumerate(self.REQUESTS):
             if(amount != 0 and env_stock[food] != 0):
                 action_options.append(food)
 
@@ -73,12 +70,16 @@ class Agent:
     def get_state(self, env_state):
         personal_state = []
 
-        difference = self.stock / self.REQUESTS
-        for diff in difference:
+        section = 1 / (len(Satisfaction) - 1)
+        satisfactions = self.stock / self.REQUESTS
+
+        for satisfaction in satisfactions:
             # print(f"satisfaction = {diff}")
-            if diff < 0.5:
+            if satisfaction == 0:
                 personal_state.append(Satisfaction.NOT)
-            elif diff < 1.0:
+            elif satisfaction < section:
+                personal_state.append(Satisfaction.SLIGHT)
+            elif satisfaction < 1:
                 personal_state.append(Satisfaction.SOMEWHAT)
             else:
                 personal_state.append(Satisfaction.PERFECT)
