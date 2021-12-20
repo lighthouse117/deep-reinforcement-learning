@@ -5,8 +5,8 @@ import numpy as np
 
 from status import StockRemaining, StockChange, Satisfaction
 
-GAMMA = 0.95
-ALPHA = 0.01
+GAMMA = 0.9
+ALPHA = 0.005
 
 EPSILON = 0.9
 
@@ -55,8 +55,8 @@ class Brain:
         # state = self.convert_state(enum_state)
 
         # 何もしないという選択肢しかない場合
-        if(len(options) == 1):
-            return options[0]
+        # if(len(options) == 1):
+        #     return options[0]
 
         if greedy is False:
             # ε-greedyで行動を決定する

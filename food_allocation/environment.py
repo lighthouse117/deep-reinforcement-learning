@@ -19,7 +19,7 @@ REQUESTS = [
 ]
 
 MAX_EPISODES = 100001
-MAX_STEPS = 100
+MAX_STEPS = 200
 
 GREEDY_CYCLE = 100
 
@@ -165,10 +165,12 @@ class Environment:
 
         remaining = np.sum(self.stock)
 
-        if deviation + remaining == 0:
-            reward = 100
-        else:
-            reward = (1 / (deviation + remaining * 100)) * 100
+        # if deviation + remaining == 0:
+        #     reward = 100
+        # else:
+        #     reward = (1 / (deviation + remaining * 100)) * 100
+
+        reward = - (deviation + remaining)
 
         if greedy:
             # print(f"満足度の標準偏差: {deviation:.1f}")
@@ -214,16 +216,15 @@ def run():
 
             actions, states_next, reward, done = env.step(states, greedy)
 
+            if step == MAX_STEPS - 1:
+                print("最大ステップ数を超えました")
+                reward = env.get_reward(greedy)
+
             if not greedy:
                 env.learn(states, actions, reward, states_next)
 
-            if done:
+            if done or step == MAX_STEPS - 1:
                 break
-
-            else:
-                if step == MAX_STEPS - 1:
-                    print("\n最大ステップ数を超えました")
-                    break
 
             states = states_next
 
@@ -236,7 +237,7 @@ def run():
     y = np.array(result_reward)
     plt.plot(x, y)
     plt.xlim(0,)
-    plt.ylim(0,)
+    plt.ylim(top=0)
     # plt.title("")
     plt.xlabel("Episode")
     plt.ylabel("Reward")

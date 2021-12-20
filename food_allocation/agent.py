@@ -46,18 +46,23 @@ class Agent:
         # 行動の候補
         action_options = []
 
-        # 自分が要求していた食品（既に満たされたかは関係ない） & 本部に在庫がある食品を候補に入れる
-        for food, amount in enumerate(self.REQUESTS):
-            if(amount != 0 and env_stock[food] != 0):
+        # 本部に在庫がある食品を候補に入れる
+        for food in range(len(env_stock)):
+            if env_stock[food] != 0:
                 action_options.append(food)
 
+        # 自分が要求していた食品（既に満たされたかは関係ない） & 本部に在庫がある食品を候補に入れる
+        # for food, amount in enumerate(self.REQUESTS):
+        #     if(amount != 0 and env_stock[food] != 0):
+        #         action_options.append(food)
+
         # 在庫切れ
-        if len(action_options) == 0:
+        # if len(action_options) == 0:
             # 候補の食品の在庫がすべてなかった場合「何もしない」
-            action = len(self.stock)
-            self.done = True
+            # action = len(self.stock)
+            # self.done = True
             # print(f"{self.name} ほしい食品の在庫がありません")
-            return action
+            # return action
 
         # 「何もしない」という選択肢も候補に加える
         action_options.append(len(self.REQUESTS))
