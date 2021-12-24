@@ -100,18 +100,17 @@ class Agent:
         # 要求リストから1つ減らす
         self.current_requests[food] -= 1
 
-    def get_satisfaction(self):
-        rates = []
-        for stock, request in zip(self.stock, self.REQUESTS):
-            # if stock > request:
-            #     stock = request
-            rates.append(stock / request * 100)
-        satisfaction = np.average(np.array(rates))
-        # print(f"\n------ {self.name} ------")
-        # print(f"要求: {self.REQUESTS}")
-        # print(f"獲得: {self.stock}")
-        # print(f"満足度: {satisfaction:.1f}%")
-        return satisfaction
+    def get_loss_value(self):
+        diffs = self.REQUESTS - self.stock
+        # print(f"diffs: {diffs}")
+        diff_rates = diffs / self.REQUESTS * 100
+        # print(f"diff_rates: {diff_rates}")
+        weighted_diffs = np.where(
+            diff_rates < 0, np.absolute(diff_rates * 10), diff_rates)
+        # print(f"weighted_diffs: {weighted_diffs}")
+
+        loss = np.average(weighted_diffs)
+        return loss
 
     def print_state(self, state):
         num = self.NUM_FOODS

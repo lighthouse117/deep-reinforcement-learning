@@ -18,7 +18,7 @@ REQUESTS = [
     [5, 5, 10]
 ]
 
-MAX_EPISODES = 100001
+MAX_EPISODES = 300001
 MAX_STEPS = 200
 
 GREEDY_CYCLE = 1000
@@ -149,11 +149,11 @@ class Environment:
             if diff == 0:
                 change.append(StockChange.NONE)
             elif diff == 1:
-                change.append(StockChange.SLIGHT)
+                change.append(StockChange.SLIGHTLY)
             elif diff == 2:
                 change.append(StockChange.SOMEWHAT)
             else:
-                change.append(StockChange.GREAT)
+                change.append(StockChange.GREATLY)
         # print(f"本部の在庫変動: {difference}")
 
         # print(f"本部在庫の変動: {diff}")
@@ -167,14 +167,16 @@ class Environment:
             agent.learn(state, action, reward, state_next)
 
     def get_reward(self, greedy):
-        satisfactions = []
+        loss_values = []
         for agent in self.agents:
-            satisfaction = agent.get_satisfaction()
-            satisfactions.append(satisfaction)
+            loss = agent.get_loss_value()
+            loss_values.append(loss)
             if greedy:
-                print(f"{agent.name}: 満足度{satisfaction:.1f} 在庫{agent.stock}")
+                print(f"{agent.name}: 損失{loss:.1f} 在庫{agent.stock}")
                 pass
-        deviation = np.std(np.array(satisfactions))
+
+        average = np.average(np.array(loss_values))
+        deviation = np.std(np.array(loss_values))
 
         remaining = np.sum(self.stock)
 
@@ -183,10 +185,11 @@ class Environment:
         # else:
         #     reward = (1 / (deviation + remaining * 100)) * 100
 
-        reward = - (deviation + remaining * 10)
+        reward = - (average + deviation + remaining * 10)
 
         if greedy:
-            print(f"満足度の標準偏差: {deviation:.1f}")
+            print(f"損失の平均: {average:.1f}")
+            print(f"損失の標準偏差: {deviation:.1f}")
             print(f"食品の残り個数: {remaining}")
             print(f"報酬: {reward:.1f}")
             pass
@@ -218,7 +221,7 @@ def run():
 
     optimal_reward = -10000
     optimal_agent_stock = []
-    optimal_satisfaction = []
+    optimal_loss_values = []
 
     epsilon = INITIAL_EPSILON
 
@@ -255,14 +258,14 @@ def run():
         if rewards[0] > optimal_reward:
             optimal_reward = rewards[0]
             print(f"\n最大の報酬を更新: {optimal_reward}")
-            optimal_satisfaction = []
+            optimal_loss_values = []
             optimal_agent_stock = []
             for agent in env.agents:
-                satisfaction = agent.get_satisfaction()
+                loss = agent.get_loss_value()
                 stock = agent.stock
-                optimal_satisfaction.append(satisfaction)
+                optimal_loss_values.append(loss)
                 optimal_agent_stock.append(stock)
-                print(f"{agent.name}: 満足度{satisfaction:.1f} 在庫{stock}")
+                print(f"{agent.name}: 損失{loss:.1f} 在庫{stock}")
             print()
 
         if epsilon > 0:
@@ -276,8 +279,8 @@ def run():
             # result_epsilon.append(epsilon)
 
     print("\n---- 最適解 ----")
-    for satisfaction, stock in zip(optimal_satisfaction, optimal_agent_stock):
-        print(f"{agent.name}: 満足度{satisfaction:.1f} 在庫{stock}")
+    for loss, stock in zip(optimal_loss_values, optimal_agent_stock):
+        print(f"{agent.name}: 損失{loss:.1f} 在庫{stock}")
     print(f"報酬: {optimal_reward:.1f}")
 
     x1 = [i * GREEDY_CYCLE for i in range(len(result_reward))]
@@ -286,8 +289,8 @@ def run():
     x2 = result_optimal_reward_x
     y2 = result_optimal_reward_y
 
-    plt.plot(x2, y2)
-    plt.plot(x1, y1)
+    plt.plot(x1, y1, zorder=2)
+    plt.plot(x2, y2, zorder=1)
 
     plt.plot()
     # plt.xlim(0,)
