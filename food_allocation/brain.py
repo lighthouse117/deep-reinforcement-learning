@@ -5,20 +5,8 @@ import numpy as np
 
 from status import StockRemaining, StockChange, Satisfaction
 
-<<<<<<< HEAD
-GAMMA = 0.9
-ALPHA = 0.005
-=======
-<<<<<<< HEAD
 GAMMA = 0.98
-ALPHA = 0.05
-=======
-GAMMA = 0.95
 ALPHA = 0.01
->>>>>>> b1259a0dcec9e9305804e7be56d444afcd5d5782
->>>>>>> 1f57782092a75412db11e93b33c6fa59953b9027
-
-EPSILON = 0.9
 
 
 class Brain:
@@ -61,7 +49,7 @@ class Brain:
         # print(self.Q[state])
 
     # 選択肢の中から行動を決定
-    def get_action(self, state, options, greedy):
+    def get_action(self, state, options, greedy, epsilon):
         # state = self.convert_state(enum_state)
 
         # 何もしないという選択肢しかない場合
@@ -70,7 +58,7 @@ class Brain:
 
         if greedy is False:
             # ε-greedyで行動を決定する
-            if np.random.rand() >= EPSILON:
+            if np.random.rand() >= epsilon:
                 greedy = True
 
         if greedy:

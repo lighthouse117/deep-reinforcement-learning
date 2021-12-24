@@ -33,7 +33,7 @@ class Agent:
         # print(f"{self.name} Q値を更新")
 
     # 行動（どの食品を取得するか）を決定
-    def decide_action(self, state, env_stock, greedy):
+    def decide_action(self, state, env_stock, greedy, epsilon):
 
         # 要求が満たされた後も自由に行動して学習をさせる
         # （十分に獲得したのにさらに手を出そうとした場合、罰を与える）
@@ -68,7 +68,7 @@ class Agent:
         action_options.append(len(self.REQUESTS))
 
         # 行動を決定
-        action = self.brain.get_action(state, action_options, greedy)
+        action = self.brain.get_action(state, action_options, greedy, epsilon)
 
         return action
 
@@ -91,7 +91,7 @@ class Agent:
 
         state = env_state + tuple(personal_state)
         # print(f"{self.name} state: {state}")
-        self.print_state(state)
+        # self.print_state(state)
         return state
 
     def get_food(self, food):
@@ -103,6 +103,8 @@ class Agent:
     def get_satisfaction(self):
         rates = []
         for stock, request in zip(self.stock, self.REQUESTS):
+            # if stock > request:
+            #     stock = request
             rates.append(stock / request * 100)
         satisfaction = np.average(np.array(rates))
         # print(f"\n------ {self.name} ------")
