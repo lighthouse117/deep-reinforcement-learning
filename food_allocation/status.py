@@ -10,14 +10,14 @@ class StockRemaining(IntEnum):
 
 class StockChange(IntEnum):
     NONE = 0
-    SLIGHT = 1
+    SLIGHTLY = 1
     SOMEWHAT = 2
-    GREAT = 3
+    GREATLY = 3
 
 
 class Satisfaction(IntEnum):
-    NOT = 0
-    SLIGHT = 1
-    SOMEWHAT = 2
-    PERFECT = 3
+    HARDLY = 0
+    SOMEWHAT = 1
+    COMLETELY = 2
+    OVERLY = 3
     pass
