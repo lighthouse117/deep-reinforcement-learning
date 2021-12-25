@@ -1,0 +1,1012 @@
+要したステップ数: 24
+-------------- Episode:89500 (greedy) --------------
+損失の平均: 198.9
+損失の標準偏差: 154.1
+食品の残り個数: 1
+報酬: -36.3
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:89600 (greedy) --------------
+損失の平均: 176.7
+損失の標準偏差: 100.8
+食品の残り個数: 2
+報酬: -29.7
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:89700 (greedy) --------------
+損失の平均: 247.8
+損失の標準偏差: 215.5
+食品の残り個数: 3
+報酬: -49.3
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:89800 (greedy) --------------
+損失の平均: 118.9
+損失の標準偏差: 128.6
+食品の残り個数: 0
+報酬: -24.8
+要したステップ数: 30
+-------------- Episode:89900 (greedy) --------------
+損失の平均: 224.4
+損失の標準偏差: 102.2
+食品の残り個数: 0
+報酬: -32.7
+要したステップ数: 29
+-------------- Episode:90000 (greedy) --------------
+損失の平均: 152.2
+損失の標準偏差: 136.5
+食品の残り個数: 1
+報酬: -29.9
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:90100 (greedy) --------------
+損失の平均: 61.1
+損失の標準偏差: 54.5
+食品の残り個数: 0
+報酬: -11.6
+要したステップ数: 31
+-------------- Episode:90200 (greedy) --------------
+損失の平均: 82.2
+損失の標準偏差: 44.0
+食品の残り個数: 0
+報酬: -12.6
+要したステップ数: 26
+-------------- Episode:90300 (greedy) --------------
+損失の平均: 151.1
+損失の標準偏差: 176.5
+食品の残り個数: 0
+報酬: -32.8
+要したステップ数: 31
+-------------- Episode:90400 (greedy) --------------
+損失の平均: 145.6
+損失の標準偏差: 64.0
+食品の残り個数: 3
+報酬: -24.0
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:90500 (greedy) --------------
+損失の平均: 200.0
+損失の標準偏差: 110.1
+食品の残り個数: 0
+報酬: -31.0
+要したステップ数: 28
+-------------- Episode:90600 (greedy) --------------
+損失の平均: 143.3
+損失の標準偏差: 150.9
+食品の残り個数: 0
+報酬: -29.4
+要したステップ数: 29
+-------------- Episode:90700 (greedy) --------------
+損失の平均: 175.6
+損失の標準偏差: 93.3
+食品の残り個数: 1
+報酬: -27.9
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:90800 (greedy) --------------
+損失の平均: 314.4
+損失の標準偏差: 188.3
+食品の残り個数: 0
+報酬: -50.3
+要したステップ数: 38
+-------------- Episode:90900 (greedy) --------------
+損失の平均: 197.8
+損失の標準偏差: 113.9
+食品の残り個数: 0
+報酬: -31.2
+要したステップ数: 30
+-------------- Episode:91000 (greedy) --------------
+損失の平均: 151.1
+損失の標準偏差: 95.3
+食品の残り個数: 0
+報酬: -24.6
+要したステップ数: 29
+-------------- Episode:91100 (greedy) --------------
+損失の平均: 267.8
+損失の標準偏差: 215.3
+食品の残り個数: 0
+報酬: -48.3
+要したステップ数: 24
+-------------- Episode:91200 (greedy) --------------
+損失の平均: 221.1
+損失の標準偏差: 153.8
+食品の残り個数: 0
+報酬: -37.5
+要したステップ数: 31
+-------------- Episode:91300 (greedy) --------------
+損失の平均: 152.2
+損失の標準偏差: 92.7
+食品の残り個数: 0
+報酬: -24.5
+要したステップ数: 29
+-------------- Episode:91400 (greedy) --------------
+損失の平均: 153.3
+損失の標準偏差: 99.6
+食品の残り個数: 0
+報酬: -25.3
+要したステップ数: 29
+-------------- Episode:91500 (greedy) --------------
+損失の平均: 221.1
+損失の標準偏差: 152.4
+食品の残り個数: 0
+報酬: -37.4
+要したステップ数: 29
+-------------- Episode:91600 (greedy) --------------
+損失の平均: 154.4
+損失の標準偏差: 93.7
+食品の残り個数: 0
+報酬: -24.8
+要したステップ数: 28
+-------------- Episode:91700 (greedy) --------------
+損失の平均: 151.1
+損失の標準偏差: 92.9
+食品の残り個数: 0
+報酬: -24.4
+要したステップ数: 28
+-------------- Episode:91800 (greedy) --------------
+損失の平均: 244.4
+損失の標準偏差: 132.8
+食品の残り個数: 0
+報酬: -37.7
+要したステップ数: 37
+-------------- Episode:91900 (greedy) --------------
+損失の平均: 212.2
+損失の標準偏差: 105.3
+食品の残り個数: 0
+報酬: -31.8
+要したステップ数: 25
+-------------- Episode:92000 (greedy) --------------
+損失の平均: 291.1
+損失の標準偏差: 187.4
+食品の残り個数: 0
+報酬: -47.8
+要したステップ数: 28
+-------------- Episode:92100 (greedy) --------------
+損失の平均: 130.0
+損失の標準偏差: 77.6
+食品の残り個数: 0
+報酬: -20.8
+要したステップ数: 34
+-------------- Episode:92200 (greedy) --------------
+損失の平均: 237.8
+損失の標準偏差: 149.6
+食品の残り個数: 0
+報酬: -38.7
+要したステップ数: 25
+-------------- Episode:92300 (greedy) --------------
+損失の平均: 314.4
+損失の標準偏差: 193.6
+食品の残り個数: 0
+報酬: -50.8
+要したステップ数: 28
+-------------- Episode:92400 (greedy) --------------
+損失の平均: 293.3
+損失の標準偏差: 244.1
+食品の残り個数: 0
+報酬: -53.7
+要したステップ数: 35
+-------------- Episode:92500 (greedy) --------------
+損失の平均: 118.9
+損失の標準偏差: 120.9
+食品の残り個数: 2
+報酬: -26.0
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:92600 (greedy) --------------
+損失の平均: 130.0
+損失の標準偏差: 106.0
+食品の残り個数: 2
+報酬: -25.6
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:92700 (greedy) --------------
+損失の平均: 182.2
+損失の標準偏差: 173.4
+食品の残り個数: 7
+報酬: -42.6
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:92800 (greedy) --------------
+損失の平均: 176.7
+損失の標準偏差: 97.4
+食品の残り個数: 2
+報酬: -29.4
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:92900 (greedy) --------------
+損失の平均: 176.7
+損失の標準偏差: 174.8
+食品の残り個数: 0
+報酬: -35.1
+要したステップ数: 31
+-------------- Episode:93000 (greedy) --------------
+損失の平均: 130.0
+損失の標準偏差: 102.5
+食品の残り個数: 1
+報酬: -24.2
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:93100 (greedy) --------------
+損失の平均: 222.2
+損失の標準偏差: 135.5
+食品の残り個数: 0
+報酬: -35.8
+要したステップ数: 28
+-------------- Episode:93200 (greedy) --------------
+損失の平均: 176.7
+損失の標準偏差: 114.1
+食品の残り個数: 0
+報酬: -29.1
+要したステップ数: 31
+-------------- Episode:93300 (greedy) --------------
+損失の平均: 151.1
+損失の標準偏差: 138.9
+食品の残り個数: 0
+報酬: -29.0
+要したステップ数: 36
+-------------- Episode:93400 (greedy) --------------
+損失の平均: 197.8
+損失の標準偏差: 126.9
+食品の残り個数: 0
+報酬: -32.5
+要したステップ数: 29
+-------------- Episode:93500 (greedy) --------------
+損失の平均: 151.1
+損失の標準偏差: 104.9
+食品の残り個数: 0
+報酬: -25.6
+要したステップ数: 30
+-------------- Episode:93600 (greedy) --------------
+損失の平均: 207.8
+損失の標準偏差: 119.9
+食品の残り個数: 6
+報酬: -38.8
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:93700 (greedy) --------------
+損失の平均: 291.1
+損失の標準偏差: 233.3
+食品の残り個数: 0
+報酬: -52.4
+要したステップ数: 30
+-------------- Episode:93800 (greedy) --------------
+損失の平均: 130.0
+損失の標準偏差: 72.5
+食品の残り個数: 0
+報酬: -20.2
+要したステップ数: 32
+-------------- Episode:93900 (greedy) --------------
+損失の平均: 244.4
+損失の標準偏差: 144.6
+食品の残り個数: 0
+報酬: -38.9
+要したステップ数: 27
+-------------- Episode:94000 (greedy) --------------
+損失の平均: 158.9
+損失の標準偏差: 99.4
+食品の残り個数: 0
+報酬: -25.8
+要したステップ数: 30
+-------------- Episode:94100 (greedy) --------------
+損失の平均: 174.4
+損失の標準偏差: 126.2
+食品の残り個数: 0
+報酬: -30.1
+要したステップ数: 28
+-------------- Episode:94200 (greedy) --------------
+損失の平均: 197.8
+損失の標準偏差: 113.9
+食品の残り個数: 0
+報酬: -31.2
+要したステップ数: 26
+-------------- Episode:94300 (greedy) --------------
+損失の平均: 197.8
+損失の標準偏差: 156.6
+食品の残り個数: 0
+報酬: -35.4
+要したステップ数: 29
+-------------- Episode:94400 (greedy) --------------
+損失の平均: 222.2
+損失の標準偏差: 227.7
+食品の残り個数: 0
+報酬: -45.0
+要したステップ数: 30
+-------------- Episode:94500 (greedy) --------------
+損失の平均: 224.4
+損失の標準偏差: 88.0
+食品の残り個数: 0
+報酬: -31.2
+要したステップ数: 24
+-------------- Episode:94600 (greedy) --------------
+損失の平均: 291.1
+損失の標準偏差: 176.7
+食品の残り個数: 0
+報酬: -46.8
+要したステップ数: 32
+-------------- Episode:94700 (greedy) --------------
+損失の平均: 57.8
+損失の標準偏差: 53.5
+食品の残り個数: 0
+報酬: -11.1
+要したステップ数: 27
+-------------- Episode:94800 (greedy) --------------
+損失の平均: 110.0
+損失の標準偏差: 51.9
+食品の残り個数: 4
+報酬: -20.2
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:94900 (greedy) --------------
+損失の平均: 291.1
+損失の標準偏差: 175.1
+食品の残り個数: 0
+報酬: -46.6
+要したステップ数: 31
+-------------- Episode:95000 (greedy) --------------
+損失の平均: 176.7
+損失の標準偏差: 98.9
+食品の残り個数: 2
+報酬: -29.6
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:95100 (greedy) --------------
+損失の平均: 182.2
+損失の標準偏差: 213.0
+食品の残り個数: 6
+報酬: -45.5
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:95200 (greedy) --------------
+損失の平均: 174.4
+損失の標準偏差: 172.3
+食品の残り個数: 0
+報酬: -34.7
+要したステップ数: 35
+-------------- Episode:95300 (greedy) --------------
+損失の平均: 174.4
+損失の標準偏差: 98.5
+食品の残り個数: 0
+報酬: -27.3
+要したステップ数: 33
+-------------- Episode:95400 (greedy) --------------
+損失の平均: 197.8
+損失の標準偏差: 205.2
+食品の残り個数: 0
+報酬: -40.3
+要したステップ数: 25
+-------------- Episode:95500 (greedy) --------------
+損失の平均: 151.1
+損失の標準偏差: 80.9
+食品の残り個数: 0
+報酬: -23.2
+要したステップ数: 26
+-------------- Episode:95600 (greedy) --------------
+損失の平均: 96.7
+損失の標準偏差: 82.8
+食品の残り個数: 0
+報酬: -17.9
+要したステップ数: 27
+-------------- Episode:95700 (greedy) --------------
+損失の平均: 95.6
+損失の標準偏差: 41.2
+食品の残り個数: 0
+報酬: -13.7
+要したステップ数: 31
+-------------- Episode:95800 (greedy) --------------
+損失の平均: 113.3
+損失の標準偏差: 47.2
+食品の残り個数: 7
+報酬: -23.1
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:95900 (greedy) --------------
+損失の平均: 291.1
+損失の標準偏差: 182.3
+食品の残り個数: 0
+報酬: -47.3
+要したステップ数: 32
+-------------- Episode:96000 (greedy) --------------
+損失の平均: 197.8
+損失の標準偏差: 116.4
+食品の残り個数: 0
+報酬: -31.4
+要したステップ数: 27
+-------------- Episode:96100 (greedy) --------------
+損失の平均: 338.9
+損失の標準偏差: 209.0
+食品の残り個数: 0
+報酬: -54.8
+要したステップ数: 32
+-------------- Episode:96200 (greedy) --------------
+損失の平均: 221.1
+損失の標準偏差: 194.4
+食品の残り個数: 0
+報酬: -41.6
+要したステップ数: 27
+-------------- Episode:96300 (greedy) --------------
+損失の平均: 293.3
+損失の標準偏差: 234.4
+食品の残り個数: 0
+報酬: -52.8
+要したステップ数: 36
+-------------- Episode:96400 (greedy) --------------
+損失の平均: 156.7
+損失の標準偏差: 137.7
+食品の残り個数: 5
+報酬: -34.4
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:96500 (greedy) --------------
+損失の平均: 121.1
+損失の標準偏差: 53.1
+食品の残り個数: 4
+報酬: -21.4
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:96600 (greedy) --------------
+損失の平均: 133.3
+損失の標準偏差: 70.9
+食品の残り個数: 5
+報酬: -25.4
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:96700 (greedy) --------------
+損失の平均: 245.6
+損失の標準偏差: 162.8
+食品の残り個数: 0
+報酬: -40.8
+要したステップ数: 32
+-------------- Episode:96800 (greedy) --------------
+損失の平均: 130.0
+損失の標準偏差: 81.8
+食品の残り個数: 0
+報酬: -21.2
+要したステップ数: 25
+-------------- Episode:96900 (greedy) --------------
+損失の平均: 128.9
+損失の標準偏差: 63.1
+食品の残り個数: 0
+報酬: -19.2
+要したステップ数: 28
+-------------- Episode:97000 (greedy) --------------
+損失の平均: 271.1
+損失の標準偏差: 165.7
+食品の残り個数: 3
+報酬: -46.7
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:97100 (greedy) --------------
+損失の平均: 104.4
+損失の標準偏差: 45.6
+食品の残り個数: 0
+報酬: -15.0
+要したステップ数: 30
+-------------- Episode:97200 (greedy) --------------
+損失の平均: 244.4
+損失の標準偏差: 146.9
+食品の残り個数: 0
+報酬: -39.1
+要したステップ数: 28
+-------------- Episode:97300 (greedy) --------------
+損失の平均: 198.9
+損失の標準偏差: 119.5
+食品の残り個数: 1
+報酬: -32.8
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:97400 (greedy) --------------
+損失の平均: 221.1
+損失の標準偏差: 129.2
+食品の残り個数: 0
+報酬: -35.0
+要したステップ数: 32
+-------------- Episode:97500 (greedy) --------------
+損失の平均: 185.6
+損失の標準偏差: 164.2
+食品の残り個数: 9
+報酬: -44.0
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:97600 (greedy) --------------
+損失の平均: 176.7
+損失の標準偏差: 103.4
+食品の残り個数: 0
+報酬: -28.0
+要したステップ数: 28
+-------------- Episode:97700 (greedy) --------------
+損失の平均: 127.8
+損失の標準偏差: 106.2
+食品の残り個数: 0
+報酬: -23.4
+要したステップ数: 30
+-------------- Episode:97800 (greedy) --------------
+損失の平均: 152.2
+損失の標準偏差: 132.2
+食品の残り個数: 0
+報酬: -28.4
+要したステップ数: 29
+-------------- Episode:97900 (greedy) --------------
+損失の平均: 104.4
+損失の標準偏差: 71.5
+食品の残り個数: 0
+報酬: -17.6
+要したステップ数: 28
+-------------- Episode:98000 (greedy) --------------
+損失の平均: 224.4
+損失の標準偏差: 155.2
+食品の残り個数: 1
+報酬: -39.0
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:98100 (greedy) --------------
+損失の平均: 221.1
+損失の標準偏差: 148.7
+食品の残り個数: 0
+報酬: -37.0
+要したステップ数: 28
+-------------- Episode:98200 (greedy) --------------
+損失の平均: 111.1
+損失の標準偏差: 77.4
+食品の残り個数: 5
+報酬: -23.8
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:98300 (greedy) --------------
+損失の平均: 106.7
+損失の標準偏差: 113.3
+食品の残り個数: 0
+報酬: -22.0
+要したステップ数: 26
+-------------- Episode:98400 (greedy) --------------
+損失の平均: 174.4
+損失の標準偏差: 103.8
+食品の残り個数: 0
+報酬: -27.8
+要したステップ数: 26
+-------------- Episode:98500 (greedy) --------------
+損失の平均: 105.6
+損失の標準偏差: 51.1
+食品の残り個数: 1
+報酬: -16.7
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:98600 (greedy) --------------
+損失の平均: 105.6
+損失の標準偏差: 73.7
+食品の残り個数: 0
+報酬: -17.9
+要したステップ数: 22
+-------------- Episode:98700 (greedy) --------------
+損失の平均: 175.6
+損失の標準偏差: 106.1
+食品の残り個数: 0
+報酬: -28.2
+要したステップ数: 24
+-------------- Episode:98800 (greedy) --------------
+損失の平均: 200.0
+損失の標準偏差: 133.7
+食品の残り個数: 2
+報酬: -35.4
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:98900 (greedy) --------------
+損失の平均: 174.4
+損失の標準偏差: 92.1
+食品の残り個数: 0
+報酬: -26.7
+要したステップ数: 32
+-------------- Episode:99000 (greedy) --------------
+損失の平均: 221.1
+損失の標準偏差: 185.3
+食品の残り個数: 0
+報酬: -40.6
+要したステップ数: 34
+-------------- Episode:99100 (greedy) --------------
+損失の平均: 198.9
+損失の標準偏差: 112.4
+食品の残り個数: 0
+報酬: -31.1
+要したステップ数: 28
+-------------- Episode:99200 (greedy) --------------
+損失の平均: 201.1
+損失の標準偏差: 111.6
+食品の残り個数: 3
+報酬: -34.3
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:99300 (greedy) --------------
+損失の平均: 317.8
+損失の標準偏差: 229.7
+食品の残り個数: 3
+報酬: -57.7
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:99400 (greedy) --------------
+損失の平均: 127.8
+損失の標準偏差: 150.8
+食品の残り個数: 0
+報酬: -27.9
+要したステップ数: 25
+-------------- Episode:99500 (greedy) --------------
+損失の平均: 130.0
+損失の標準偏差: 71.4
+食品の残り個数: 0
+報酬: -20.1
+要したステップ数: 27
+-------------- Episode:99600 (greedy) --------------
+損失の平均: 157.8
+損失の標準偏差: 136.7
+食品の残り個数: 6
+報酬: -35.5
+最大ステップ数を超えました
+要したステップ数: 199
+-------------- Episode:99700 (greedy) --------------
+損失の平均: 127.8
+損失の標準偏差: 99.0
+食品の残り個数: 0
+報酬: -22.7
+要したステップ数: 32
+-------------- Episode:99800 (greedy) --------------
+損失の平均: 174.4
+損失の標準偏差: 96.6
+食品の残り個数: 0
+報酬: -27.1
+要したステップ数: 30
+-------------- Episode:99900 (greedy) --------------
+損失の平均: 268.9
+損失の標準偏差: 170.9
+食品の残り個数: 0
+報酬: -44.0
+要したステップ数: 32
+-------------- Episode:100000 (greedy) --------------
+
+------- Step:0 -------
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-10 -10 -10] 行動:  行動: 食品1
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[ -5 -10  -5] 行動:  行動: 食品2
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[ -5  -5 -10] 行動:  行動: 食品0
+本部の在庫（更新前）: [20 20 20]
+本部の在庫（更新後）: [19 19 19]
+
+------- Step:1 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-10  -9 -10] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[ -5 -10  -4] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[ -4  -5 -10] 行動:  行動: 食品0
+本部の在庫（更新前）: [19 19 19]
+本部の在庫（更新後）: [17 19 18]
+
+------- Step:2 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-10  -9  -9] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[ -4 -10  -4] 行動:  行動: 食品1
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[ -3  -5 -10] 行動:  行動: 食品2
+本部の在庫（更新前）: [17 19 18]
+本部の在庫（更新後）: [17 18 16]
+
+------- Step:3 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE SLIGHTLY SOMEWHAT ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-10  -9  -8] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE SLIGHTLY SOMEWHAT ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-4 -9 -4] 行動:  行動: 食品1
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE SLIGHTLY SOMEWHAT ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -5 -9] 行動:  行動: 食品1
+本部の在庫（更新前）: [17 18 16]
+本部の在庫（更新後）: [17 16 15]
+
+------- Step:4 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-10  -9  -7] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-4 -8 -4] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -4 -9] 行動: 何もしない
+本部の在庫（更新前）: [17 16 15]
+本部の在庫（更新後）: [15 16 15]
+
+------- Step:5 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-9 -9 -7] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -8 -4] 行動:  行動: 食品2
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -4 -9] 行動: 何もしない
+本部の在庫（更新前）: [15 16 15]
+本部の在庫（更新後）: [14 16 14]
+
+------- Step:6 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-8 -9 -7] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -8 -3] 行動:  行動: 食品1
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -4 -9] 行動: 何もしない
+本部の在庫（更新前）: [14 16 14]
+本部の在庫（更新後）: [14 15 13]
+
+------- Step:7 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-8 -9 -6] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -7 -3] 行動:  行動: 食品1
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -4 -9] 行動:  行動: 食品0
+本部の在庫（更新前）: [14 15 13]
+本部の在庫（更新後）: [12 14 13]
+
+------- Step:8 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-7 -9 -6] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -6 -3] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -4 -9] 行動:  行動: 食品2
+本部の在庫（更新前）: [12 14 13]
+本部の在庫（更新後）: [12 14 11]
+
+------- Step:9 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SOMEWHAT ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -9 -5] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SOMEWHAT ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-3 -6 -3] 行動:  行動: 食品2
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SOMEWHAT ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -4 -8] 行動:  行動: 食品2
+本部の在庫（更新前）: [12 14 11]
+本部の在庫（更新後）: [12 14  8]
+
+------- Step:10 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE GREATLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -9 -4] 行動:  行動: 食品1
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE GREATLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-3 -6 -2] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE GREATLY ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -4 -7] 行動:  行動: 食品1
+本部の在庫（更新前）: [12 14  8]
+本部の在庫（更新後）: [11 12  8]
+
+------- Step:11 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY SOMEWHAT NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -8 -4] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY SOMEWHAT NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-2 -6 -2] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY SOMEWHAT NONE ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -3 -7] 行動:  行動: 食品2
+本部の在庫（更新前）: [11 12  8]
+本部の在庫（更新後）: [11 12  7]
+
+------- Step:12 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -8 -4] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-2 -6 -2] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -3 -6] 行動: 何もしない
+本部の在庫（更新前）: [11 12  7]
+本部の在庫（更新後）: [11 12  7]
+
+------- Step:13 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -8 -4] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-2 -6 -2] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -3 -6] 行動: 何もしない
+本部の在庫（更新前）: [11 12  7]
+本部の在庫（更新後）: [10 12  6]
+
+------- Step:14 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -8 -3] 行動:  行動: 食品1
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-1 -6 -2] 行動:  行動: 食品2
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[0. 0. 0. 0.] 要求との差:[-2 -3 -6] 行動:  行動: 食品2
+本部の在庫（更新前）: [10 12  6]
+本部の在庫（更新後）: [10 11  4]
+
+------- Step:15 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ NONE SLIGHTLY SOMEWHAT ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-7 -7 -3] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ NONE SLIGHTLY SOMEWHAT ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-1 -6 -1] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ NONE SLIGHTLY SOMEWHAT ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-2 -3 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [10 11  4]
+本部の在庫（更新後）: [ 7 11  4]
+
+------- Step:16 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ GREATLY NONE NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-6 -7 -3] 行動:  行動: 食品1
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ GREATLY NONE NONE ], Satisfaction[ COMLETELY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 0 -6 -1] 行動:  行動: 食品0
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ GREATLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-1 -3 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 7 11  4]
+本部の在庫（更新後）: [ 5 10  4]
+
+------- Step:17 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SOMEWHAT SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-6 -6 -3] 行動:  行動: 食品2
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SOMEWHAT SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 1 -6 -1] 行動: 何もしない
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SOMEWHAT SLIGHTLY NONE ], Satisfaction[ COMLETELY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 0 -3 -5] 行動: 何もしない
+本部の在庫（更新前）: [ 5 10  4]
+本部の在庫（更新後）: [ 5 10  3]
+
+------- Step:18 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-6 -6 -2] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 1 -6 -1] 行動:  行動: 食品2
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ COMLETELY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 0 -3 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [ 5 10  3]
+本部の在庫（更新後）: [5 9 2]
+
+------- Step:19 -------
+Agent1 State: Remaining[ FEW FEW FEW ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-6 -6 -2] 行動: 何もしない
+Agent2 State: Remaining[ FEW FEW FEW ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ OVERLY HARDLY COMLETELY ]
+[0. 0. 0. 0.] 要求との差:[ 1 -6  0] 行動:  行動: 食品2
+Agent3 State: Remaining[ FEW FEW FEW ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ COMLETELY SOMEWHAT SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 0 -2 -5] 行動: 何もしない
+本部の在庫（更新前）: [5 9 2]
+本部の在庫（更新後）: [5 9 1]
+
+------- Step:20 -------
+Agent1 State: Remaining[ FEW FEW FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-6 -6 -2] 行動:  行動: 食品2
+Agent2 State: Remaining[ FEW FEW FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[ 0.         -1.16344469  0.          0.        ] 要求との差:[ 1 -6  1] 行動:  行動: 食品0
+Agent3 State: Remaining[ FEW FEW FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ COMLETELY SOMEWHAT SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[ 0 -2 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [5 9 1]
+本部の在庫（更新後）: [3 9 0]
+
+------- Step:21 -------
+Agent1 State: Remaining[ FEW FEW NONE ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[0. 0. 0. 0.] 要求との差:[-6 -6 -1] 行動: 何もしない
+Agent2 State: Remaining[ FEW FEW NONE ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[-2.29907496e-05 -3.60649472e+00  0.00000000e+00  0.00000000e+00] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ FEW FEW NONE ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[ 0.00000000e+00  0.00000000e+00  0.00000000e+00 -4.01388948e-06] 要求との差:[ 1 -2 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [3 9 0]
+本部の在庫（更新後）: [2 9 0]
+
+------- Step:22 -------
+Agent1 State: Remaining[ FEW FEW NONE ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-4.89675241e-63  0.00000000e+00  0.00000000e+00  0.00000000e+00] 要求との差:[-6 -6 -1] 行動:  行動: 食品1
+Agent2 State: Remaining[ FEW FEW NONE ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[-1.74777453e+00 -3.64696379e+00  0.00000000e+00 -1.53037806e-03] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ FEW FEW NONE ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[-3.53702897e-04 -2.00505010e+00  0.00000000e+00 -1.24082962e+00] 要求との差:[ 2 -2 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [2 9 0]
+本部の在庫（更新後）: [1 8 0]
+
+------- Step:23 -------
+Agent1 State: Remaining[ FEW FEW NONE ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[-0.42440292 -0.00801936  0.         -2.62782842] 要求との差:[-6 -5 -1] 行動:  行動: 食品1
+Agent2 State: Remaining[ FEW FEW NONE ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[-6.12245505e+00 -9.85981282e-01  0.00000000e+00 -3.05663914e-04] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ FEW FEW NONE ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[-0.04630481 -1.1308711   0.         -1.35227548] 要求との差:[ 3 -2 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [1 8 0]
+本部の在庫（更新後）: [0 7 0]
+
+------- Step:24 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -14.84990082   0.          -1.97386943] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[ 0.         -9.1511697   0.         -4.30222466] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[ 0.         -4.52126544  0.         -2.58922418] 要求との差:[ 4 -2 -5] 行動: 何もしない
+本部の在庫（更新前）: [0 7 0]
+本部の在庫（更新後）: [0 7 0]
+
+------- Step:25 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -17.26030824   0.          -7.84357787] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[ 0.         -9.82559546  0.         -7.76324854] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[ 0.         -3.72930327  0.         -4.8862653 ] 要求との差:[ 4 -2 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 7 0]
+本部の在庫（更新後）: [0 6 0]
+
+------- Step:26 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -21.92380476   0.         -14.21318023] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[  0.         -16.55756539   0.          -7.99724738] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[ 0.         -7.64149005  0.         -1.58872661] 要求との差:[ 4 -1 -5] 行動: 何もしない
+本部の在庫（更新前）: [0 6 0]
+本部の在庫（更新後）: [0 6 0]
+
+------- Step:27 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -17.26030824   0.          -7.84357787] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[ 0.         -9.82559546  0.         -7.76324854] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[ 0.         -3.72930327  0.         -4.8862653 ] 要求との差:[ 4 -1 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 6 0]
+本部の在庫（更新後）: [0 5 0]
+
+------- Step:28 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -21.92380476   0.         -14.21318023] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[  0.         -16.55756539   0.          -7.99724738] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY COMLETELY SOMEWHAT ]
+[  0.         -14.92913238   0.          -4.43360239] 要求との差:[ 4  0 -5] 行動: 何もしない
+本部の在庫（更新前）: [0 5 0]
+本部の在庫（更新後）: [0 5 0]
+
+------- Step:29 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -17.26030824   0.          -7.84357787] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[ 0.         -9.82559546  0.         -7.76324854] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY COMLETELY SOMEWHAT ]
+[ 0.         -6.86129084  0.         -8.23576985] 要求との差:[ 4  0 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 5 0]
+本部の在庫（更新後）: [0 4 0]
+
+------- Step:30 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -21.92380476   0.         -14.21318023] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[  0.         -16.55756539   0.          -7.99724738] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY OVERLY SOMEWHAT ]
+[  0.         -14.22050632   0.         -28.30226909] 要求との差:[ 4  1 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 4 0]
+本部の在庫（更新後）: [0 3 0]
+
+------- Step:31 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -21.92380476   0.         -14.21318023] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[  0.         -16.55756539   0.          -7.99724738] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY OVERLY SOMEWHAT ]
+[  0.         -14.22050632   0.         -28.30226909] 要求との差:[ 4  2 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 3 0]
+本部の在庫（更新後）: [0 2 0]
+
+------- Step:32 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -21.92380476   0.         -14.21318023] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[  0.         -16.55756539   0.          -7.99724738] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY OVERLY SOMEWHAT ]
+[  0.         -14.22050632   0.         -28.30226909] 要求との差:[ 4  3 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 2 0]
+本部の在庫（更新後）: [0 1 0]
+
+------- Step:33 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ HARDLY SOMEWHAT SOMEWHAT ]
+[  0.         -21.92380476   0.         -14.21318023] 要求との差:[-6 -4 -1] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY OVERLY ]
+[  0.         -16.55756539   0.          -7.99724738] 要求との差:[ 2 -6  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY OVERLY SOMEWHAT ]
+[  0.         -14.22050632   0.         -28.30226909] 要求との差:[ 4  4 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 1 0]
+本部の在庫（更新後）: [0 0 0]
+損失の平均: 291.1
+損失の標準偏差: 242.1
+食品の残り個数: 0
+報酬: -53.3
+要したステップ数: 33
+
+---- 最適解 ----
+Agent1: 損失13.3 要求との差[ 0 -2 -2] 在庫[10  8  8]
+Agent2: 損失10.0 要求との差[ 0 -3  0] 在庫[5 7 5]
+Agent3: 損失10.0 要求との差[ 0  0 -3] 在庫[5 5 7]
+報酬: -1.3

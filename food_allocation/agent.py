@@ -21,7 +21,7 @@ class Agent:
         state = self.get_state(env_state)
         return state
 
-    def learn(self, state, action, reward, state_next):
+    def learn(self, state, action, reward, state_next, alpha):
         # print("state:")
         # self.print_state(state)
         # if state_next is not None:
@@ -29,11 +29,14 @@ class Agent:
         #     self.print_state(state_next)
         # print(f"action: {action}")
         # print(f"reward: {reward}")
-        self.brain.update_Q(state, action, reward, state_next)
+        self.brain.update_Q(state, action, reward, state_next, alpha)
         # print(f"{self.name} Q値を更新")
 
     # 行動（どの食品を取得するか）を決定
     def decide_action(self, state, env_stock, greedy, epsilon):
+
+        # if greedy:
+        #     self.print_state(state)
 
         # 要求が満たされた後も自由に行動して学習をさせる
         # （十分に獲得したのにさらに手を出そうとした場合、罰を与える）
@@ -67,8 +70,19 @@ class Agent:
         # 「何もしない」という選択肢も候補に加える
         action_options.append(len(self.REQUESTS))
 
+        # if greedy:
+        #     print(self.name + "  ", end="")
+
         # 行動を決定
         action = self.brain.get_action(state, action_options, greedy, epsilon)
+
+        # if greedy:
+        #     if action == self.NUM_FOODS:
+        #         print(" 行動: 何もしない", end="")
+        #         pass
+        #     else:
+        #         print(f" 行動: 食品{action}を取る", end="")
+        #         pass
 
         return action
 
@@ -91,7 +105,7 @@ class Agent:
 
         state = env_state + tuple(personal_state)
         # print(f"{self.name} state: {state}")
-        # self.print_state(state)
+
         return state
 
     def get_food(self, food):

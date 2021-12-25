@@ -5,8 +5,8 @@ import numpy as np
 
 from status import StockRemaining, StockChange, Satisfaction
 
-GAMMA = 0.98
-ALPHA = 0.01
+GAMMA = 0.99
+# ALPHA = 0.01
 
 
 class Brain:
@@ -27,7 +27,7 @@ class Brain:
         self.Q = np.zeros(shape)
         print(f"Q shape: {shape} 要素数: {self.Q.size}")
 
-    def update_Q(self, state, action, reward, state_next):
+    def update_Q(self, state, action, reward, state_next, alpha):
 
         if state_next is None:
             target = reward
@@ -44,7 +44,15 @@ class Brain:
 
         predict = self.Q[state][action]
 
-        self.Q[state][action] += ALPHA * (target - predict)
+        diff = target - predict
+        # if abs(diff) > 50:
+        #     pass
+
+        # print(f"before: {self.Q[state][action]}")
+
+        self.Q[state][action] = self.Q[state][action] + alpha * diff
+
+        # print(f"after: {self.Q[state][action]}\n")
 
         # print(self.Q[state])
 
@@ -55,6 +63,8 @@ class Brain:
         # 何もしないという選択肢しかない場合
         # if(len(options) == 1):
         #     return options[0]
+        # if greedy:
+        #     print(self.Q[state], end="")
 
         if greedy is False:
             # ε-greedyで行動を決定する
@@ -64,28 +74,28 @@ class Brain:
         if greedy:
             # Greedyに行動選択
             # Q値が大きい方から順に0でなく、かつ選択可能な行動を探す
-            # print(self.Q[state])
 
             # 選択可能な行動のQ値を取り出す
             options_Q = self.Q[state][options]
 
-            # 全て初期値だった場合はランダムに選択
-            if np.all((options_Q == options_Q[0])):
-                # print("全て初期値")
-                action = random.choice(options)
-            else:
-                # arg_sorted_Q = np.argsort(self.Q[state])[::-1]
-                # print(self.Q[state])
-                max_arg = np.argmax(options_Q)
-                action = options[max_arg]
+            max_arg = np.argmax(options_Q)
+            action = options[max_arg]
 
-                # for food in arg_sorted_Q:
-                #     # 選択肢に含まれているか
-                #     if food in options:
-                #         action = food
-                #         break
-                # if self.Q[state][food] != 0:
-                # break
+            # 全て初期値だった場合はランダムに選択
+            # if np.all((options_Q == options_Q[0])):
+            #     # print("全て初期値")
+            #     action = random.choice(options)
+            # else:
+            # arg_sorted_Q = np.argsort(self.Q[state])[::-1]
+            # print(self.Q[state])
+
+            # for food in arg_sorted_Q:
+            #     # 選択肢に含まれているか
+            #     if food in options:
+            #         action = food
+            #         break
+            # if self.Q[state][food] != 0:
+            # break
             # print(f"greedy action: {action}")
         else:
             # Randomに行動選択
