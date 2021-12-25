@@ -1,0 +1,443 @@
+-------------- Episode:100000 (greedy) --------------
+
+------- Step:0 -------
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-18.65554017 -18.40911919 -18.72219633 -18.54264234] 要求との差:[-10 -10 -10] 行動:  行動: 食品1
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.66677271 -23.33921625 -23.51902648 -23.5615008 ] 要求との差:[ -5 -10  -5] 行動:  行動: 食品1
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.73259203 -23.37118833 -23.60520797 -23.55858717] 要求との差:[ -5  -5 -10] 行動:  行動: 食品1
+本部の在庫（更新前）: [20 20 20]
+本部の在庫（更新後）: [20 17 20]
+
+------- Step:1 -------
+Agent1 State: Remaining[ FULL MANY FULL ], Change[ NONE GREATLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-18.75515269 -18.58206594 -18.66175938 -18.39133531] 要求との差:[-10  -9 -10] 行動: 何もしない
+Agent2 State: Remaining[ FULL MANY FULL ], Change[ NONE GREATLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.80581335 -23.37252935 -23.53362444 -23.34135935] 要求との差:[-5 -9 -5] 行動: 何もしない
+Agent3 State: Remaining[ FULL MANY FULL ], Change[ NONE GREATLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.92583799 -25.39620197 -23.6080196  -23.36358406] 要求との差:[ -5  -4 -10] 行動: 何もしない
+本部の在庫（更新前）: [20 17 20]
+本部の在庫（更新後）: [20 17 20]
+
+------- Step:2 -------
+Agent1 State: Remaining[ FULL MANY FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-18.45744916 -18.34633818 -18.34318441 -21.62618504] 要求との差:[-10  -9 -10] 行動:  行動: 食品2
+Agent2 State: Remaining[ FULL MANY FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.36378119 -26.62272048 -23.34124762 -26.31924049] 要求との差:[-5 -9 -5] 行動:  行動: 食品2
+Agent3 State: Remaining[ FULL MANY FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.40122853 -23.67358269 -23.35442782 -26.4985987 ] 要求との差:[ -5  -4 -10] 行動:  行動: 食品2
+本部の在庫（更新前）: [20 17 20]
+本部の在庫（更新後）: [20 17 17]
+
+------- Step:3 -------
+Agent1 State: Remaining[ FULL MANY MANY ], Change[ NONE NONE GREATLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-18.24897259 -18.25514018 -27.86296463 -18.2506003 ] 要求との差:[-10  -9  -9] 行動:  行動: 食品0
+Agent2 State: Remaining[ FULL MANY MANY ], Change[ NONE NONE GREATLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.23559435 -23.22876627 -37.28748231 -30.7439368 ] 要求との差:[-5 -9 -4] 行動:  行動: 食品1
+Agent3 State: Remaining[ FULL MANY MANY ], Change[ NONE NONE GREATLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-23.1700604  -23.15671514 -41.24575776 -23.15292825] 要求との差:[-5 -4 -9] 行動: 何もしない
+本部の在庫（更新前）: [20 17 17]
+本部の在庫（更新後）: [19 16 17]
+
+------- Step:4 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.85158195 -20.11114483 -19.72699862 -19.57812212] 要求との差:[-9 -9 -9] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.21960681 -25.74010079 -25.13271269 -24.72059616] 要求との差:[-5 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-26.27363841 -25.87800283 -25.39948501 -24.68340608] 要求との差:[-5 -4 -9] 行動: 何もしない
+本部の在庫（更新前）: [19 16 17]
+本部の在庫（更新後）: [19 16 17]
+
+------- Step:5 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.84815034 -20.03049251 -19.90360517 -21.27516463] 要求との差:[-9 -9 -9] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.47586905 -25.51935125 -25.48250538 -26.10411676] 要求との差:[-5 -8 -4] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.66308356 -25.52996604 -25.5124685  -27.10840166] 要求との差:[-5 -4 -9] 行動:  行動: 食品2
+本部の在庫（更新前）: [19 16 17]
+本部の在庫（更新後）: [17 16 16]
+
+------- Step:6 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.74671735 -19.60369729 -19.5645362  -19.64610138] 要求との差:[-8 -9 -9] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.52089269 -25.18134948 -25.22717483 -24.87616726] 要求との差:[-4 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.38924399 -25.09968717 -25.29275737 -24.79369491] 要求との差:[-5 -4 -8] 行動: 何もしない
+本部の在庫（更新前）: [17 16 16]
+本部の在庫（更新後）: [17 16 15]
+
+------- Step:7 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.88826418 -19.98633203 -19.85200234 -19.56419094] 要求との差:[-8 -9 -8] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.344564   -25.67046698 -25.67137332 -24.83179335] 要求との差:[-4 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.20540794 -25.80076979 -25.41314948 -24.80751183] 要求との差:[-5 -4 -8] 行動: 何もしない
+本部の在庫（更新前）: [17 16 15]
+本部の在庫（更新後）: [17 16 15]
+
+------- Step:8 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.84335801 -20.03049251 -19.90360517 -21.27516463] 要求との差:[-8 -9 -8] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.46738487 -25.51935125 -25.48250538 -26.10411676] 要求との差:[-4 -8 -4] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.66308356 -25.52996604 -25.50280192 -27.10840166] 要求との差:[-5 -4 -8] 行動:  行動: 食品2
+本部の在庫（更新前）: [17 16 15]
+本部の在庫（更新後）: [15 16 14]
+
+------- Step:9 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.74671735 -19.60369729 -19.56257644 -19.64610138] 要求との差:[-7 -9 -8] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.52089269 -25.18134948 -25.22717483 -24.8732405 ] 要求との差:[-3 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.38924399 -25.09968717 -25.29275737 -24.79135246] 要求との差:[-5 -4 -7] 行動: 何もしない
+本部の在庫（更新前）: [15 16 14]
+本部の在庫（更新後）: [15 16 13]
+
+------- Step:10 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.88826418 -19.98633203 -19.85200234 -19.56499823] 要求との差:[-7 -9 -7] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.344564   -25.67046698 -25.67137332 -24.83560232] 要求との差:[-3 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.20540794 -25.80076979 -25.41314948 -24.81191421] 要求との差:[-5 -4 -7] 行動: 何もしない
+本部の在庫（更新前）: [15 16 13]
+本部の在庫（更新後）: [15 16 13]
+
+------- Step:11 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.83859419 -20.03049251 -19.90360517 -21.27516463] 要求との差:[-7 -9 -7] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.45895656 -25.51935125 -25.48250538 -26.10411676] 要求との差:[-3 -8 -4] 行動:  行動: 食品0
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.66308356 -25.52996604 -25.49320882 -27.10840166] 要求との差:[-5 -4 -7] 行動:  行動: 食品2
+本部の在庫（更新前）: [15 16 13]
+本部の在庫（更新後）: [13 16 12]
+
+------- Step:12 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.74671735 -19.60369729 -19.56064426 -19.64610138] 要求との差:[-6 -9 -7] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[-28.29172683 -28.29090377 -28.42672958 -27.53278494] 要求との差:[-2 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ SOMEWHAT NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.38924399 -25.09968717 -25.29275737 -24.78907701] 要求との差:[-5 -4 -6] 行動: 何もしない
+本部の在庫（更新前）: [13 16 12]
+本部の在庫（更新後）: [13 16 11]
+
+------- Step:13 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.88826418 -19.98633203 -19.85200234 -19.56575029] 要求との差:[-6 -9 -6] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[-30.46116372 -29.41197188 -29.06828951 -28.03812303] 要求との差:[-2 -8 -4] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.20540794 -25.80076979 -25.41314948 -24.81617761] 要求との差:[-5 -4 -6] 行動: 何もしない
+本部の在庫（更新前）: [13 16 11]
+本部の在庫（更新後）: [13 16 11]
+
+------- Step:14 -------
+Agent1 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-19.83385889 -20.03049251 -19.90360517 -21.27516463] 要求との差:[-6 -9 -6] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[-29.29276967 -29.07988206 -28.96561944 -29.09349582] 要求との差:[-2 -8 -4] 行動:  行動: 食品2
+Agent3 State: Remaining[ MANY MANY MANY ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+[-25.66308356 -25.52996604 -25.48368911 -27.10840166] 要求との差:[-5 -4 -6] 行動:  行動: 食品2
+本部の在庫（更新前）: [13 16 11]
+本部の在庫（更新後）: [12 16  9]
+
+------- Step:15 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE SOMEWHAT ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[-22.3542066  -48.58103644 -74.31569562 -22.2911172 ] 要求との差:[-5 -9 -6] 行動: 何もしない
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE SOMEWHAT ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[-89.28297234 -68.85879428 -26.72439208 -36.40480794] 要求との差:[-2 -8 -3] 行動:  行動: 食品2
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE SOMEWHAT ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-35.74906169 -57.18797415 -86.89728156 -33.89582394] 要求との差:[-5 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [12 16  9]
+本部の在庫（更新後）: [12 16  8]
+
+------- Step:16 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY HARDLY ]
+[-61.2918281  -33.63851297 -23.73911631 -57.5851848 ] 要求との差:[-5 -9 -6] 行動:  行動: 食品2
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-36.71109229 -32.33915058 -40.09894013 -29.37095872] 要求との差:[-2 -8 -2] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-36.22198385 -35.14941356 -38.63416516 -34.08604603] 要求との差:[-5 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [12 16  8]
+本部の在庫（更新後）: [12 16  7]
+
+------- Step:17 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-26.91997284 -34.52457886 -31.29345692 -44.8415251 ] 要求との差:[-5 -9 -5] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-36.71109229 -32.33915058 -40.09894013 -29.36802179] 要求との差:[-2 -8 -2] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-36.22198385 -35.14941356 -38.63416516 -34.08263761] 要求との差:[-5 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [12 16  7]
+本部の在庫（更新後）: [11 16  7]
+
+------- Step:18 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-51.21671675 -72.01757851 -60.89465492 -61.11656244] 要求との差:[-4 -9 -5] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-32.48777174 -29.86953767 -40.89162702 -29.27356784] 要求との差:[-2 -8 -2] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-34.25039644 -35.35215671 -59.02018171 -34.14206085] 要求との差:[-5 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [11 16  7]
+本部の在庫（更新後）: [10 16  7]
+
+------- Step:19 -------
+Agent1 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-51.21159536 -72.01757851 -60.89465492 -61.11656244] 要求との差:[-3 -9 -5] 行動:  行動: 食品0
+Agent2 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-32.48777174 -29.86953767 -40.89162702 -29.27064064] 要求との差:[-2 -8 -2] 行動: 何もしない
+Agent3 State: Remaining[ MANY MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-34.25039644 -35.35215671 -59.02018171 -34.13864683] 要求との差:[-5 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [10 16  7]
+本部の在庫（更新後）: [ 9 16  7]
+
+------- Step:20 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-29.43174056 -27.39342119 -44.29626906 -24.37353765] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-47.28714825 -28.57328601 -38.89487529 -37.61993018] 要求との差:[-2 -8 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[ -37.18564173  -48.35248552 -165.00157281  -70.9691901 ] 要求との差:[-5 -4 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 9 16  7]
+本部の在庫（更新後）: [ 8 15  7]
+
+------- Step:21 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-42.03150974 -31.40006982 -31.82576475 -24.30128159] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-38.19316224 -25.50951474 -31.33354344 -35.44863896] 要求との差:[-2 -7 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-32.27590432 -37.18104576 -73.60722734 -41.53183354] 要求との差:[-4 -4 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 8 15  7]
+本部の在庫（更新後）: [ 7 14  7]
+
+------- Step:22 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-42.03150974 -31.40006982 -31.82576475 -24.2988516 ] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-38.19316224 -25.50696393 -31.33354344 -35.44863896] 要求との差:[-2 -6 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ HARDLY HARDLY SOMEWHAT ]
+[-32.27267691 -37.18104576 -73.60722734 -41.53183354] 要求との差:[-3 -4 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 7 14  7]
+本部の在庫（更新後）: [ 6 13  7]
+
+------- Step:23 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-42.03150974 -31.40006982 -31.82576475 -24.29642184] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-56.01679958 -30.2023153  -61.43393709 -84.15064562] 要求との差:[-2 -5 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-40.11323359 -57.35384489 -85.39987285 -80.23668327] 要求との差:[-2 -4 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 6 13  7]
+本部の在庫（更新後）: [ 5 12  7]
+
+------- Step:24 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-42.03150974 -31.40006982 -31.82576475 -24.29399233] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-56.01679958 -30.19929524 -61.43393709 -84.15064562] 要求との差:[-2 -4 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-40.10922248 -57.35384489 -85.39987285 -80.23668327] 要求との差:[-1 -4 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 5 12  7]
+本部の在庫（更新後）: [ 4 11  7]
+
+------- Step:25 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-42.03150974 -31.40006982 -31.82576475 -24.29156307] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-56.01679958 -30.19627547 -61.43393709 -84.15064562] 要求との差:[-2 -3 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ COMLETELY HARDLY SOMEWHAT ]
+[-37.37944606 -31.36860953 -38.67176055 -31.22509234] 要求との差:[ 0 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [ 4 11  7]
+本部の在庫（更新後）: [ 4 10  7]
+
+------- Step:26 -------
+Agent1 State: Remaining[ FEW MANY FEW ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-54.69208543 -25.39310701 -46.03975512 -24.29047275] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW MANY FEW ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-48.21593166 -23.7410074  -59.02547425 -35.29070895] 要求との差:[-2 -2 -2] 行動:  行動: 食品1
+Agent3 State: Remaining[ FEW MANY FEW ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ COMLETELY HARDLY SOMEWHAT ]
+[-39.40055252 -99.16068227 -41.84564443 -43.80953356] 要求との差:[ 0 -4 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [ 4 10  7]
+本部の在庫（更新後）: [3 9 7]
+
+------- Step:27 -------
+Agent1 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-35.27560005 -24.93717637 -39.25132109 -24.77740011] 要求との差:[-2 -9 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-24.19247294 -74.45325014 -22.90596717 -22.41128955] 要求との差:[-2 -1 -2] 行動: 何もしない
+Agent3 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY SLIGHTLY NONE ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-39.23461489 -20.54495523 -56.89296707 -20.44321205] 要求との差:[ 1 -4 -5] 行動: 何もしない
+本部の在庫（更新前）: [3 9 7]
+本部の在庫（更新後）: [3 9 7]
+
+------- Step:28 -------
+Agent1 State: Remaining[ FEW FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-42.7126231  -25.18173682 -32.76399803 -25.52170497] 要求との差:[-2 -9 -5] 行動:  行動: 食品1
+Agent2 State: Remaining[ FEW FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-21.72663105 -43.97484738 -47.13287727 -24.99351441] 要求との差:[-2 -1 -2] 行動:  行動: 食品0
+Agent3 State: Remaining[ FEW FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[ -24.98207858  -20.51215964 -108.87491384  -21.12740394] 要求との差:[ 1 -4 -5] 行動:  行動: 食品1
+本部の在庫（更新前）: [3 9 7]
+本部の在庫（更新後）: [2 7 7]
+
+------- Step:29 -------
+Agent1 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY SOMEWHAT NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-25.34591812 -24.74217311 -46.06873089 -24.65810584] 要求との差:[-2 -8 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY SOMEWHAT NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-26.54165359 -69.93911242 -23.14105615 -22.52486339] 要求との差:[-1 -1 -2] 行動: 何もしない
+Agent3 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY SOMEWHAT NONE ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-20.03704052 -20.16528235 -20.86868779 -20.16498978] 要求との差:[ 1 -3 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [2 7 7]
+本部の在庫（更新後）: [1 7 7]
+
+------- Step:30 -------
+Agent1 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-28.39829924 -25.08009169 -42.22475416 -24.82498257] 要求との差:[-2 -8 -5] 行動: 何もしない
+Agent2 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-25.02455691 -37.55902988 -22.90032296 -23.91050235] 要求との差:[-1 -1 -2] 行動:  行動: 食品2
+Agent3 State: Remaining[ FEW FEW FEW ], Change[ SLIGHTLY NONE NONE ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-20.23516532 -21.10678721 -73.52438719 -20.38299282] 要求との差:[ 2 -3 -5] 行動:  行動: 食品0
+本部の在庫（更新前）: [1 7 7]
+本部の在庫（更新後）: [0 7 6]
+
+------- Step:31 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -26.84371568   -27.69585668   -26.83562494] 要求との差:[-2 -8 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-1000.          -153.51438356   -69.11752763   -51.59375155] 要求との差:[-1 -1 -1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ SLIGHTLY NONE SLIGHTLY ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-1000.           -21.76843925  -188.46049208   -21.59513603] 要求との差:[ 3 -3 -5] 行動: 何もしない
+本部の在庫（更新前）: [0 7 6]
+本部の在庫（更新後）: [0 7 6]
+
+------- Step:32 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.63920415   -29.62483031   -28.12630494] 要求との差:[-2 -8 -5] 行動:  行動: 食品1
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-1000.          -277.28569882   -32.81680987   -76.0612146 ] 要求との差:[-1 -1 -1] 行動:  行動: 食品2
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-1000.           -32.72618538  -112.70501084   -28.80179135] 要求との差:[ 3 -3 -5] 行動: 何もしない
+本部の在庫（更新前）: [0 7 6]
+本部の在庫（更新後）: [0 6 5]
+
+------- Step:33 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.38758925   -32.32054984   -27.3291847 ] 要求との差:[-2 -7 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT COMLETELY ]
+[-1000.           -97.8969094    -28.34096077   -32.21853497] 要求との差:[-1 -1  0] 行動:  行動: 食品2
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE SLIGHTLY SLIGHTLY ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-1000.           -33.97714911   -22.96291028   -41.8443228 ] 要求との差:[ 3 -3 -5] 行動:  行動: 食品2
+本部の在庫（更新前）: [0 6 5]
+本部の在庫（更新後）: [0 6 3]
+
+------- Step:34 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE SOMEWHAT ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.02681072   -32.03010851   -27.02547194] 要求との差:[-2 -7 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE SOMEWHAT ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -59.50874442   -28.92993996   -28.59616097] 要求との差:[-1 -1  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE SOMEWHAT ], Satisfaction[ OVERLY HARDLY SOMEWHAT ]
+[-1000.           -21.94818171  -106.79514997   -27.87612807] 要求との差:[ 3 -3 -4] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 6 3]
+本部の在庫（更新後）: [0 5 3]
+
+------- Step:35 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.56169119   -36.62686447   -27.295159  ] 要求との差:[-2 -7 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -40.43504977   -29.06995635   -28.89036797] 要求との差:[-1 -1  1] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE SLIGHTLY NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[-1000.           -23.87943363   -39.94848329   -23.55080795] 要求との差:[ 3 -2 -4] 行動: 何もしない
+本部の在庫（更新前）: [0 5 3]
+本部の在庫（更新後）: [0 5 3]
+
+------- Step:36 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.63337135   -29.62483031   -28.12630494] 要求との差:[-2 -7 -5] 行動:  行動: 食品1
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -40.37388042   -29.31070502   -29.60685251] 要求との差:[-1 -1  1] 行動:  行動: 食品2
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[-1000.           -24.16836497   -40.72053172   -24.28024699] 要求との差:[ 3 -2 -4] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 5 3]
+本部の在庫（更新後）: [0 3 2]
+
+------- Step:37 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.00636744   -33.79764897   -27.00225881] 要求との差:[-2 -6 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -62.23116417   -28.86310066   -28.44762257] 要求との差:[-1 -1  2] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[-1000.           -23.08246592   -29.60958024   -22.84313   ] 要求との差:[ 3 -1 -4] 行動: 何もしない
+本部の在庫（更新前）: [0 3 2]
+本部の在庫（更新後）: [0 3 2]
+
+------- Step:38 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT HARDLY SOMEWHAT ]
+[-1000.           -27.62436049   -29.62483031   -28.12630494] 要求との差:[-2 -6 -5] 行動:  行動: 食品1
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -40.37388042   -29.29923006   -29.60685251] 要求との差:[-1 -1  2] 行動:  行動: 食品2
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY SOMEWHAT SOMEWHAT ]
+[-1000.           -24.15282916   -40.72053172   -24.28024699] 要求との差:[ 3 -1 -4] 行動:  行動: 食品1
+本部の在庫（更新前）: [0 3 2]
+本部の在庫（更新後）: [0 1 1]
+
+------- Step:39 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-1000.           -29.57511303   -28.74292868   -28.05440941] 要求との差:[-2 -5 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -62.23116417   -28.86310066   -28.45320842] 要求との差:[-1 -1  3] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE SOMEWHAT SLIGHTLY ], Satisfaction[ OVERLY COMLETELY SOMEWHAT ]
+[-1000.           -29.66781927   -27.41633783   -24.98765301] 要求との差:[ 3  0 -4] 行動: 何もしない
+本部の在庫（更新前）: [0 1 1]
+本部の在庫（更新後）: [0 1 1]
+
+------- Step:40 -------
+Agent1 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-1000.           -31.25918526   -30.00345934   -29.66327909] 要求との差:[-2 -5 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -40.37388042   -29.28792514   -29.60685251] 要求との差:[-1 -1  3] 行動:  行動: 食品2
+Agent3 State: Remaining[ NONE FEW FEW ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY COMLETELY SOMEWHAT ]
+[-1000.           -30.26792604   -39.54731891   -26.09177711] 要求との差:[ 3  0 -4] 行動: 何もしない
+本部の在庫（更新前）: [0 1 1]
+本部の在庫（更新後）: [0 1 0]
+
+------- Step:41 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-1000.           -28.28050123 -1000.           -27.71288208] 要求との差:[-2 -5 -5] 行動: 何もしない
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -30.66499214 -1000.           -30.57329143] 要求との差:[-1 -1  4] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE SLIGHTLY ], Satisfaction[ OVERLY COMLETELY SOMEWHAT ]
+[-1000.           -30.25742587 -1000.           -25.50083044] 要求との差:[ 3  0 -4] 行動: 何もしない
+本部の在庫（更新前）: [0 1 0]
+本部の在庫（更新後）: [0 1 0]
+
+------- Step:42 -------
+Agent1 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT SOMEWHAT ]
+[-1000.           -27.39182466 -1000.           -28.0571682 ] 要求との差:[-2 -5 -5] 行動:  行動: 食品1
+Agent2 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ SOMEWHAT SOMEWHAT OVERLY ]
+[-1000.           -32.26656872 -1000.           -31.7370971 ] 要求との差:[-1 -1  4] 行動: 何もしない
+Agent3 State: Remaining[ NONE FEW NONE ], Change[ NONE NONE NONE ], Satisfaction[ OVERLY COMLETELY SOMEWHAT ]
+[-1000.           -30.92286822 -1000.           -26.10761048] 要求との差:[ 3  0 -4] 行動: 何もしない
+本部の在庫（更新前）: [0 1 0]
+本部の在庫（更新後）: [0 0 0]
+損失の平均: 175.6
+損失の標準偏差: 101.6
+食品の残り個数: 0
+報酬: -27.71
+要したステップ数: 42
+
+---- 最適解 ----
+Agent1: 損失13.3 要求との差[ 0 -2 -2] 在庫[10  8  8]
+Agent2: 損失10.0 要求との差[ 0 -3  0] 在庫[5 7 5]
+Agent3: 損失10.0 要求との差[ 0  0 -3] 在庫[5 5 7]
+報酬: -1.2682
+発見したエピソード: 12629

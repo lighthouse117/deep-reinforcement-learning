@@ -23,8 +23,8 @@ class Brain:
         # 行動数
         shape.append(num_foods + 1)
 
-        # self.Q = np.full(shape, -1000)
-        self.Q = np.zeros(shape)
+        self.Q = np.full(shape, -1000.0)
+        # self.Q = np.zeros(shape)
         print(f"Q shape: {shape} 要素数: {self.Q.size}")
 
     def update_Q(self, state, action, reward, state_next, alpha):

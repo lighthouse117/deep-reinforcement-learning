@@ -24,7 +24,7 @@ MAX_STEPS = 200
 GREEDY_CYCLE = 100
 
 INITIAL_EPSILON = 1.0
-MINIMUM_EPSILON = 0.1
+MINIMUM_EPSILON = 0.5
 EPSILON_DELTA = (INITIAL_EPSILON - MINIMUM_EPSILON) / (MAX_EPISODES * 0.9)
 
 INITIAL_ALPHA = 0.5
@@ -123,7 +123,7 @@ class Environment:
             print(f"本部の在庫（更新前）: {old_stock}")
             print(f"本部の在庫（更新後）: {self.stock}")
 
-            # 次の状態へ遷移
+        # 次の状態へ遷移
         self.env_state = self.get_env_state_next(old_stock)
 
         # 終了条件を満たしているかチェック
@@ -291,10 +291,7 @@ def run():
                 if greedy:
                     print("最大ステップ数を超えました")
 
-            if greedy:
-                pass
-            else:
-                env.learn(states, actions, rewards, states_next, alpha)
+            env.learn(states, actions, rewards, states_next, alpha)
 
             if done or step == MAX_STEPS - 1:
                 break
@@ -340,7 +337,7 @@ def run():
         diff = stock - request
         print(f"{agent.name}: 損失{loss:.1f} 要求との差{diff} 在庫{stock}")
     print(f"報酬: {optimal_reward:.4f}")
-    print(f"発見したエピソード]: {optimal_episode}")
+    print(f"発見したエピソード: {optimal_episode}")
 
     plt.show()
 
