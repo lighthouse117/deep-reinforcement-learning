@@ -2,7 +2,7 @@
 
 import numpy as np
 from brain import Brain
-from status import Satisfaction
+from status import StockRemaining, StockChange, Satisfaction
 
 
 class Agent:
@@ -14,12 +14,11 @@ class Agent:
         self.brain = Brain(num_foods)
         self.REQUESTS = np.array(requests)
 
-    def reset(self, env_state):
+    def reset(self, env_stock):
         self.current_requests = self.REQUESTS.copy()
         self.stock = np.zeros(self.NUM_FOODS, dtype=np.int64)
         self.done = False
-        state = self.get_state(env_state)
-        return state
+        self.old_env_stock = env_stock.copy()
 
     def learn(self, state, action, reward, state_next, alpha):
         # print("state:")
@@ -40,11 +39,6 @@ class Agent:
 
         # 要求が満たされた後も自由に行動して学習をさせる
         # （十分に獲得したのにさらに手を出そうとした場合、罰を与える）
-
-        if np.all(self.current_requests == 0):
-            # 要求がすべて満たされたことを記録
-            self.done = True
-            # print(f"{self.name} 要求がすべて満たされました")
 
         # 行動の候補
         action_options = []
@@ -86,33 +80,85 @@ class Agent:
 
         return action
 
-    def get_state(self, env_state):
-        personal_state = []
+    def observe_state(self, env_stock, original_foods):
+        remainings = []
+        changes = []
+        satisfactions = []
 
-        # section = 1 / (len(Satisfaction) - 1)
-        satisfactions = self.stock / self.REQUESTS
-
-        for satisfaction in satisfactions:
-            # print(f"satisfaction = {diff}")
-            if satisfaction < 0.5:
-                personal_state.append(Satisfaction.HARDLY)
-            elif satisfaction < 1:
-                personal_state.append(Satisfaction.SOMEWHAT)
-            elif satisfaction == 1:
-                personal_state.append(Satisfaction.COMLETELY)
+        granularity = len(StockRemaining) - 2
+        for amount, original in zip(env_stock, original_foods):
+            section = round(original / granularity)
+            if amount == 0:
+                remainings.append(StockRemaining.NONE)
+            elif amount < section:
+                remainings.append(StockRemaining.FEW)
+            elif amount < original:
+                remainings.append(StockRemaining.MANY)
             else:
-                personal_state.append(Satisfaction.OVERLY)
+                remainings.append(StockRemaining.FULL)
 
-        state = env_state + tuple(personal_state)
-        # print(f"{self.name} state: {state}")
+        difference = self.old_env_stock - env_stock
+        for diff in difference:
+            if diff == 0:
+                changes.append(StockChange.NONE)
+            elif diff == 1:
+                changes.append(StockChange.SLIGHTLY)
+            elif diff == 2:
+                changes.append(StockChange.SOMEWHAT)
+            else:
+                changes.append(StockChange.GREATLY)
+        # print(f"本部の在庫変動: {difference}")
+
+        satisfaction_rates = self.stock / self.REQUESTS
+        for rate in satisfaction_rates:
+            # print(f"satisfaction = {diff}")
+            if rate < 0.5:
+                satisfactions.append(Satisfaction.HARDLY)
+            elif rate < 1:
+                satisfactions.append(Satisfaction.SOMEWHAT)
+            elif rate == 1:
+                satisfactions.append(Satisfaction.COMLETELY)
+            else:
+                satisfactions.append(Satisfaction.OVERLY)
+
+        state = tuple(remainings + changes + satisfactions)
+
+        self.old_env_stock = env_stock.copy()
 
         return state
+
+    # def get_state(self, env_state):
+    #     personal_state = []
+
+    #     # section = 1 / (len(Satisfaction) - 1)
+    #     satisfactions = self.stock / self.REQUESTS
+
+    #     for satisfaction in satisfactions:
+    #         # print(f"satisfaction = {diff}")
+    #         if satisfaction < 0.5:
+    #             personal_state.append(Satisfaction.HARDLY)
+    #         elif satisfaction < 1:
+    #             personal_state.append(Satisfaction.SOMEWHAT)
+    #         elif satisfaction == 1:
+    #             personal_state.append(Satisfaction.COMLETELY)
+    #         else:
+    #             personal_state.append(Satisfaction.OVERLY)
+
+    #     state = env_state + tuple(personal_state)
+    #     # print(f"{self.name} state: {state}")
+
+    #     return state
 
     def get_food(self, food):
         # 手元の在庫が1つ増える
         self.stock[food] += 1
         # 要求リストから1つ減らす
         self.current_requests[food] -= 1
+
+        if np.all(self.current_requests == 0):
+            # 要求がすべて満たされたことを記録
+            self.done = True
+            # print(f"{self.name} 要求がすべて満たされました")
 
     def get_loss_value(self):
         diffs = self.REQUESTS - self.stock
