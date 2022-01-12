@@ -1,0 +1,1018 @@
+Agent1: 報酬-0.333 絶対偏差0.3 満足度-12.0 要求[10 10 10] 在庫[4 6 8]
+Agent2: 報酬-6.667 絶対偏差6.7 満足度-19.0 要求[ 5 10  5] 在庫[13  9  4]
+Agent3: 報酬-6.333 絶対偏差6.3 満足度-6.0 要求[ 5  5 10] 在庫[3 5 8]
+要したステップ数: 32
+-------------- Episode:6100 (greedy) --------------
+満足度の平均: -12.33
+食品の残り個数: 0
+Agent1: 報酬-0.333 絶対偏差0.3 満足度-12.0 要求[10 10 10] 在庫[14  7 15]
+Agent2: 報酬-1.333 絶対偏差1.3 満足度-11.0 要求[ 5 10  5] 在庫[3 7 3]
+Agent3: 報酬-1.667 絶対偏差1.7 満足度-14.0 要求[ 5  5 10] 在庫[3 6 2]
+要したステップ数: 39
+-------------- Episode:6200 (greedy) --------------
+満足度の平均: -27.33
+食品の残り個数: 53
+Agent1: 報酬-531.667 絶対偏差1.7 満足度-29.0 要求[10 10 10] 在庫[0 1 0]
+Agent2: 報酬-530.333 絶対偏差0.3 満足度-27.0 要求[ 5 10  5] 在庫[0 3 0]
+Agent3: 報酬-531.333 絶対偏差1.3 満足度-26.0 要求[ 5  5 10] 在庫[0 1 2]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:6300 (greedy) --------------
+満足度の平均: -27.33
+食品の残り個数: 52
+Agent1: 報酬-520.333 絶対偏差0.3 満足度-27.0 要求[10 10 10] 在庫[0 1 2]
+Agent2: 報酬-520.667 絶対偏差0.7 満足度-28.0 要求[ 5 10  5] 在庫[0 2 0]
+Agent3: 報酬-520.333 絶対偏差0.3 満足度-27.0 要求[ 5  5 10] 在庫[0 0 3]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:6400 (greedy) --------------
+満足度の平均: -16.00
+食品の残り個数: 12
+Agent1: 報酬-122.000 絶対偏差2.0 満足度-14.0 要求[10 10 10] 在庫[5 5 6]
+Agent2: 報酬-127.000 絶対偏差7.0 満足度-23.0 要求[ 5 10  5] 在庫[12  5  3]
+Agent3: 報酬-125.000 絶対偏差5.0 満足度-11.0 要求[ 5  5 10] 在庫[3 4 5]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:6500 (greedy) --------------
+満足度の平均: -28.00
+食品の残り個数: 55
+Agent1: 報酬-550.000 絶対偏差0.0 満足度-28.0 要求[10 10 10] 在庫[1 1 0]
+Agent2: 報酬-550.000 絶対偏差0.0 満足度-28.0 要求[ 5 10  5] 在庫[0 2 0]
+Agent3: 報酬-550.000 絶対偏差0.0 満足度-28.0 要求[ 5  5 10] 在庫[1 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:6600 (greedy) --------------
+満足度の平均: -8.67
+食品の残り個数: 0
+Agent1: 報酬-1.667 絶対偏差1.7 満足度-7.0 要求[10 10 10] 在庫[13  8 12]
+Agent2: 報酬-1.333 絶対偏差1.3 満足度-10.0 要求[ 5 10  5] 在庫[3 8 3]
+Agent3: 報酬-0.333 絶対偏差0.3 満足度-9.0 要求[ 5  5 10] 在庫[4 4 5]
+要したステップ数: 42
+-------------- Episode:6700 (greedy) --------------
+満足度の平均: -8.67
+食品の残り個数: 0
+Agent1: 報酬-1.333 絶対偏差1.3 満足度-10.0 要求[10 10 10] 在庫[7 8 5]
+Agent2: 報酬-3.333 絶対偏差3.3 満足度-12.0 要求[ 5 10  5] 在庫[8 8 3]
+Agent3: 報酬-4.667 絶対偏差4.7 満足度-4.0 要求[ 5  5 10] 在庫[ 5  4 12]
+要したステップ数: 33
+-------------- Episode:6800 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:6900 (greedy) --------------
+満足度の平均: -7.67
+食品の残り個数: 8
+Agent1: 報酬-80.333 絶対偏差0.3 満足度-8.0 要求[10 10 10] 在庫[10  7  5]
+Agent2: 報酬-80.667 絶対偏差0.7 満足度-7.0 要求[ 5 10  5] 在庫[5 7 3]
+Agent3: 報酬-80.333 絶対偏差0.3 満足度-8.0 要求[ 5  5 10] 在庫[5 6 4]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7000 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7100 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7200 (greedy) --------------
+満足度の平均: -9.00
+食品の残り個数: 0
+Agent1: 報酬-2.000 絶対偏差2.0 満足度-11.0 要求[10 10 10] 在庫[14  5  8]
+Agent2: 報酬-0.000 絶対偏差0.0 満足度-9.0 要求[ 5 10  5] 在庫[3 9 3]
+Agent3: 報酬-2.000 絶対偏差2.0 満足度-7.0 要求[ 5  5 10] 在庫[3 6 9]
+要したステップ数: 45
+-------------- Episode:7300 (greedy) --------------
+満足度の平均: -13.00
+食品の残り個数: 4
+Agent1: 報酬-42.000 絶対偏差2.0 満足度-15.0 要求[10 10 10] 在庫[5 5 5]
+Agent2: 報酬-45.000 絶対偏差5.0 満足度-8.0 要求[ 5 10  5] 在庫[ 3 10  3]
+Agent3: 報酬-43.000 絶対偏差3.0 満足度-16.0 要求[ 5  5 10] 在庫[12  5  8]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7400 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7500 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7600 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7700 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7800 (greedy) --------------
+満足度の平均: -16.00
+食品の残り個数: 7
+Agent1: 報酬-71.000 絶対偏差1.0 満足度-17.0 要求[10 10 10] 在庫[3 5 5]
+Agent2: 報酬-76.000 絶対偏差6.0 満足度-22.0 要求[ 5 10  5] 在庫[14 10  3]
+Agent3: 報酬-77.000 絶対偏差7.0 満足度-9.0 要求[ 5  5 10] 在庫[3 5 5]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:7900 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8000 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8100 (greedy) --------------
+満足度の平均: -12.33
+食品の残り個数: 0
+Agent1: 報酬-4.333 絶対偏差4.3 満足度-8.0 要求[10 10 10] 在庫[8 9 5]
+Agent2: 報酬-1.667 絶対偏差1.7 満足度-14.0 要求[ 5 10  5] 在庫[ 4  8 10]
+Agent3: 報酬-2.667 絶対偏差2.7 満足度-15.0 要求[ 5  5 10] 在庫[8 3 5]
+要したステップ数: 41
+-------------- Episode:8200 (greedy) --------------
+満足度の平均: -8.33
+食品の残り個数: 0
+Agent1: 報酬-2.333 絶対偏差2.3 満足度-6.0 要求[10 10 10] 在庫[13 11  8]
+Agent2: 報酬-2.667 絶対偏差2.7 満足度-11.0 要求[ 5 10  5] 在庫[3 5 6]
+Agent3: 報酬-0.333 絶対偏差0.3 満足度-8.0 要求[ 5  5 10] 在庫[4 4 6]
+要したステップ数: 33
+-------------- Episode:8300 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8400 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8500 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8600 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8700 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8800 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:8900 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9000 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9100 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9200 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9300 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9400 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9500 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9600 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9700 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9800 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:9900 (greedy) --------------
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49
+-------------- Episode:10000 (greedy) --------------
+
+------- Step:0 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.88003179] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -585.09328757] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.39455658] 行動: 何もしない
+
+------- Step:1 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.88003179] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -585.09328757] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.39455658] 行動: 何もしない
+
+------- Step:2 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.82697268] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -585.03481009] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.33734828] 行動: 何もしない
+
+------- Step:3 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.77391888] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.97633846] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.28014571] 行動: 何もしない
+
+------- Step:4 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.72087039] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.91787267] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.22294885] 行動: 何もしない
+
+------- Step:5 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.66782719] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.85941273] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.1657577 ] 行動: 何もしない
+
+------- Step:6 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.6147893 ] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.80095863] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.10857227] 行動: 何もしない
+
+------- Step:7 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.56175671] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.74251037] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -572.05139256] 行動: 何もしない
+
+------- Step:8 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.50872941] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.68406795] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.99421857] 行動: 何もしない
+
+------- Step:9 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.45570742] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.62563137] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.93705028] 行動: 何もしない
+
+------- Step:10 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.40269073] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.56720063] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.87988771] 行動: 何もしない
+
+------- Step:11 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.34967933] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.50877574] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.82273086] 行動: 何もしない
+
+------- Step:12 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.29667324] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.45035668] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.76557971] 行動: 何もしない
+
+------- Step:13 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.24367244] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.39194346] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.70843428] 行動: 何もしない
+
+------- Step:14 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.19067694] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.33353608] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.65129456] 行動: 何もしない
+
+------- Step:15 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.13768673] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.27513454] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.59416055] 行動: 何もしない
+
+------- Step:16 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.08470182] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.21673883] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.53703225] 行動: 何もしない
+
+------- Step:17 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -530.03172221] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.15834896] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.47990966] 行動: 何もしない
+
+------- Step:18 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.97874789] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.09996493] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.42279278] 行動: 何もしない
+
+------- Step:19 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.92577887] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -584.04158673] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.36568161] 行動: 何もしない
+
+------- Step:20 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.87281514] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.98321437] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.30857615] 行動: 何もしない
+
+------- Step:21 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.8198567 ] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.92484784] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.25147639] 行動: 何もしない
+
+------- Step:22 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.76690356] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.86648714] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.19438234] 行動: 何もしない
+
+------- Step:23 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.71395571] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.80813228] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.137294  ] 行動: 何もしない
+
+------- Step:24 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.66101315] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.74978324] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.08021136] 行動: 何もしない
+
+------- Step:25 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.60807589] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.69144004] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -571.02313443] 行動: 何もしない
+
+------- Step:26 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.55514391] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.63310268] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.9660632 ] 行動: 何もしない
+
+------- Step:27 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.50221722] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.57477114] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.90899768] 行動: 何もしない
+
+------- Step:28 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.44929583] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.51644543] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.85193786] 行動: 何もしない
+
+------- Step:29 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.39637972] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.45812555] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.79488374] 行動: 何もしない
+
+------- Step:30 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.3434689 ] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.3998115 ] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.73783533] 行動: 何もしない
+
+------- Step:31 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.29056337] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.34150328] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.68079261] 行動: 何もしない
+
+------- Step:32 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.23766313] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.28320089] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.6237556 ] 行動: 何もしない
+
+------- Step:33 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.18476817] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.22490432] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.56672429] 行動: 何もしない
+
+------- Step:34 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.13187851] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.16661358] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.50969868] 行動: 何もしない
+
+------- Step:35 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.07899412] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.10832867] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.45267877] 行動: 何もしない
+
+------- Step:36 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -529.02611503] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -583.05004958] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.39566455] 行動: 何もしない
+
+------- Step:37 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.97324122] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.99177631] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.33865604] 行動: 何もしない
+
+------- Step:38 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.92037269] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.93350887] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.28165322] 行動: 何もしない
+
+------- Step:39 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.86750944] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.87524726] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.2246561 ] 行動: 何もしない
+
+------- Step:40 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.81465148] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.81699146] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.16766468] 行動: 何もしない
+
+------- Step:41 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.76179881] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.75874149] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.11067895] 行動: 何もしない
+
+------- Step:42 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.70895141] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.70049734] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -570.05369892] 行動: 何もしない
+
+------- Step:43 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.6561093 ] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.64225901] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.99672458] 行動: 何もしない
+
+------- Step:44 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.60327247] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.58402651] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.93975594] 行動: 何もしない
+
+------- Step:45 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.55044092] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.52579982] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.88279299] 行動: 何もしない
+
+------- Step:46 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.49761465] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.46757895] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.82583574] 行動: 何もしない
+
+------- Step:47 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.44479366] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.4093639 ] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.76888418] 行動: 何もしない
+
+------- Step:48 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.39197795] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.35115467] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.7119383 ] 行動: 何もしない
+
+------- Step:49 -------
+本部の在庫: [20 20 20]
+Agent1 前回からの変化:[0 0 0]
+Agent1 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-540.2420333  -541.54605614 -543.14621369 -528.33916751] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent2 前回からの変化:[0 0 0]
+Agent2 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-601.30704157 -596.28661722 -604.417739   -582.29295126] 行動: 何もしない
+本部の在庫: [20 20 20]
+Agent3 前回からの変化:[0 0 0]
+Agent3 State: Remaining[ FULL FULL FULL ], Change[ NONE NONE NONE ], Satisfaction[ HARDLY HARDLY HARDLY ]
+Q:[-597.9975688  -596.64877934 -587.04135796 -569.65499812] 行動: 何もしない
+満足度の平均: -30.00
+食品の残り個数: 60
+Agent1: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[10 10 10] 在庫[0 0 0]
+Agent2: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5 10  5] 在庫[0 0 0]
+Agent3: 報酬-600.000 絶対偏差0.0 満足度-30.0 要求[ 5  5 10] 在庫[0 0 0]
+最大ステップ数を超えました
+要したステップ数: 49

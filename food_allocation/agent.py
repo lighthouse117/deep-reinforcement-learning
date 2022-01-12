@@ -107,7 +107,6 @@ class Agent:
                 changes.append(StockChange.SOMEWHAT)
             else:
                 changes.append(StockChange.GREATLY)
-        # print(f"本部の在庫変動: {difference}")
 
         satisfaction_rates = self.stock / self.REQUESTS
         for rate in satisfaction_rates:
@@ -160,17 +159,26 @@ class Agent:
             self.done = True
             # print(f"{self.name} 要求がすべて満たされました")
 
-    def get_loss_value(self):
+    def get_satisfaction(self):
         diffs = self.REQUESTS - self.stock
-        # print(f"diffs: {diffs}")
-        diff_rates = diffs / self.REQUESTS * 100
-        # print(f"diff_rates: {diff_rates}")
-        weighted_diffs = np.where(
-            diff_rates < 0, np.absolute(diff_rates * 10), diff_rates)
-        # print(f"weighted_diffs: {weighted_diffs}")
+        diff_rates = diffs / self.REQUESTS * 10
+        abs_diffs = np.absolute(diff_rates)
+        satisfaction = - np.sum(abs_diffs)
+        return satisfaction
 
-        loss = np.average(weighted_diffs)
-        return loss
+    # def get_reward(self):
+
+        # def get_loss_value(self):
+        #     diffs = self.REQUESTS - self.stock
+        #     # print(f"diffs: {diffs}")
+        #     diff_rates = diffs / self.REQUESTS * 100
+        #     # print(f"diff_rates: {diff_rates}")
+        #     weighted_diffs = np.where(
+        #         diff_rates < 0, np.absolute(diff_rates * 10), diff_rates)
+        #     # print(f"weighted_diffs: {weighted_diffs}")
+
+        #     loss = np.average(weighted_diffs)
+        #     return loss
 
     def print_state(self, state):
         num = self.NUM_FOODS

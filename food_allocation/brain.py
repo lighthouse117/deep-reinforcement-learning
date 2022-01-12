@@ -52,6 +52,8 @@ class Brain:
 
         self.Q[state][action] = self.Q[state][action] + alpha * diff
 
+        # print(reward)
+
         # print(f"after: {self.Q[state][action]}\n")
 
         # print(self.Q[state])
