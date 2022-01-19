@@ -7,7 +7,6 @@ from status import StockRemaining, StockChange, Satisfaction
 import matplotlib.pyplot as plt
 import copy
 
-
 FOODS = [20, 20, 20]
 NUM_FOODS = len(FOODS)
 MAX_UNITS = max(FOODS)
@@ -17,10 +16,10 @@ AGENTS_COUNT = 3
 REQUESTS = [
     [10, 10, 10],
     [5, 10, 5],
-    [5, 5, 10]
+    [5, 5, 10],
 ]
 
-MAX_EPISODES = 1000001
+MAX_EPISODES = 100001
 MAX_STEPS = 100
 
 GREEDY_CYCLE = 1000

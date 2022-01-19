@@ -15,14 +15,17 @@ class Agent:
         self.REQUESTS = np.array(requests)
         self.f = f
 
-    def reset(self, env_stock):
+    def reset(self, env_stock, greedy):
+
         self.current_requests = self.REQUESTS.copy()
         self.stock = np.zeros(self.NUM_FOODS, dtype=np.int64)
         self.food_done = False
         self.learning_done = False
         self.old_env_stock = env_stock.copy()
+        if greedy:
+            self.brain.get_TD_average()
 
-    def learn(self, state, action, reward, state_next, alpha):
+    def learn(self, state, action, reward, state_next, alpha, greedy):
         # print("state:")
         # self.print_state(state)
         # if state_next is not None:
@@ -30,7 +33,7 @@ class Agent:
         #     self.print_state(state_next)
         # print(f"action: {action}")
         # print(f"reward: {reward}")
-        self.brain.update_Q(state, action, reward, state_next, alpha)
+        self.brain.update_Q(state, action, reward, state_next, alpha, greedy)
         # print(f"{self.name} Q値を更新")
 
     # 行動（どの食品を取得するか）を決定

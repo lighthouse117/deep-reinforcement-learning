@@ -12,6 +12,7 @@ GAMMA = 0.99
 class Brain:
     def __init__(self, num_foods, f):
         self.f = f
+        self.TDs = []
         shape = []
         # 状態数
         for i in range(num_foods):
@@ -28,12 +29,10 @@ class Brain:
         # self.Q = np.zeros(shape)
         print(f"Q shape: {shape} 要素数: {self.Q.size}", file=self.f)
 
-    def update_Q(self, state, action, reward, state_next, alpha):
-
+    def update_Q(self, state, action, reward, state_next, alpha, greedy):
         if state_next is None:
             target = reward
         else:
-
             # sorted_Q = np.sort(self.Q[state_next])[::-1]
             # # print(sorted_Q)
             # for value in sorted_Q:
@@ -46,6 +45,10 @@ class Brain:
         predict = self.Q[state][action]
 
         diff = target - predict
+
+        if greedy:
+            self.TDs.append(diff)
+
         # if abs(diff) > 50:
         #     pass
 
@@ -108,3 +111,8 @@ class Brain:
             # print(f"random action: {action}")
 
         return action
+
+    def get_TD_average(self):
+        TD_ave = np.average(np.array(self.TDs))
+        print(f"TD誤差の平均: {TD_ave:.3f}")
+        self.TDs = []
