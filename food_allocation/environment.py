@@ -20,26 +20,28 @@ REQUESTS = [
     [5, 5, 10]
 ]
 
-MAX_EPISODES = 101
+MAX_EPISODES = 1000001
 MAX_STEPS = 100
 
-GREEDY_CYCLE = 100
+GREEDY_CYCLE = 1000
 
 INITIAL_EPSILON = 1.0
 MINIMUM_EPSILON = 0.5
-EPSILON_DELTA = (INITIAL_EPSILON - MINIMUM_EPSILON) / (MAX_EPISODES * 0.9)
+EPSILON_DELTA = (INITIAL_EPSILON - MINIMUM_EPSILON) / (MAX_EPISODES * 0.95)
 
 INITIAL_ALPHA = 0.5
 MINIMUM_ALPHA = 0.01
-ALPHA_DELTA = (INITIAL_ALPHA - MINIMUM_ALPHA) / (MAX_EPISODES * 0.9)
+ALPHA_DELTA = (INITIAL_ALPHA - MINIMUM_ALPHA) / (MAX_EPISODES * 0.95)
 
 
 class Environment:
 
-    def __init__(self):
+    def __init__(self, f):
+        self.f = f
         state_size = pow(len(StockRemaining), NUM_FOODS) * pow(len(StockChange),
                                                                NUM_FOODS) * pow(len(Satisfaction), NUM_FOODS)
-        print(f"状態数: {state_size}")
+
+        print(f"状態数: {state_size}", file=self.f)
         self.agents = self.init_agents()
 
     def init_agents(self):
@@ -47,7 +49,7 @@ class Environment:
         for i in range(AGENTS_COUNT):
             name = f"Agent{i + 1}"
             agent = Agent(
-                name, MAX_UNITS, NUM_FOODS, np.array(REQUESTS[i]))
+                name, MAX_UNITS, NUM_FOODS, np.array(REQUESTS[i]), self.f)
             agents.append(agent)
         return agents
 
@@ -142,74 +144,77 @@ class Environment:
         # 全ての在庫が0になったかチェック
         return np.all(self.stock == 0)
 
-    def check_all_agent_done(self):
+    def check_agents_food_done(self):
         # 全てのエージェントが終了条件を満たしているかチェック
-        all_agent_done = True
+        agents_done = True
         for agent in self.agents:
-            if not agent.done:
-                all_agent_done = False
+            if not agent.food_done:
+                agents_done = False
                 break
-
         # 全エージェントの取れる行動がなくなったか
-        return all_agent_done
+        return agents_done
+
+    def check_agents_learning_done(self):
+        agents_done = True
+        for agent in self.agents:
+            if not agent.learning_done:
+                agents_done = False
+                break
+        return agents_done
 
     def learn(self, states, actions, rewards, states_next, alpha):
         for agent, state, action, reward, state_next in zip(self.agents, states, actions, rewards, states_next):
             agent.learn(state, action, reward, state_next, alpha)
 
-    def get_rewards(self, greedy):
-        rewards = []
-        satisfactions = []
+    def get_reward(self, target_agent: Agent, terminal, greedy):
+        if terminal:
+            satisfactions = []
 
-        remaining = np.sum(self.stock)
+            remaining = np.sum(self.stock)
 
-        for agent in self.agents:
-            satisfaction = agent.get_satisfaction()
-            satisfactions.append(satisfaction)
+            for agent in self.agents:
+                s = agent.get_satisfaction()
+                satisfactions.append(s)
+            average = np.average(satisfactions)
 
-        average = np.average(satisfactions)
-
-        if greedy:
-            # print(f"損失の標準偏差: {deviation:.1f}")
-            print(f"満足度の平均: {average:.2f}")
-            print(f"食品の残り個数: {remaining}")
-            pass
-        for agent, satisfaction in zip(self.agents, satisfactions):
-            abs_deviation = np.absolute(average - satisfaction)
-            reward = - (abs_deviation + remaining * 10)
-            rewards.append(reward)
             if greedy:
-                print(
-                    f"{agent.name}: 報酬{reward:.3f} 絶対偏差{abs_deviation:.1f} 満足度{satisfaction:.1f} 要求{agent.REQUESTS} 在庫{agent.stock}")
+                # print(f"損失の標準偏差: {deviation:.1f}")
+                print(f"満足度の平均: {average:.2f}", file=self.f)
+                print(f"食品の残り個数: {remaining}", file=self.f)
                 pass
 
-        # average = np.average(np.array(satisfactions))
-        # deviation = np.std(np.array(loss_values))
+            agent_satisfaction = target_agent.get_satisfaction()
+            abs_deviation = np.absolute(average - agent_satisfaction)
 
-        # if deviation + remaining == 0:
-        #     reward = 100
-        # else:
-        #     reward = (1 / (deviation + remaining * 100)) * 100
+            reward = - (abs_deviation + remaining * 10)
 
-        # reward = - deviation * 0.1 - remaining * 10
+            if greedy:
+                print(
+                    f"{target_agent.name}: 報酬{reward:.3f} 絶対偏差{abs_deviation:.1f} 満足度{agent_satisfaction:.1f} 要求{target_agent.REQUESTS} 在庫{target_agent.stock}", file=self.f)
+                pass
+        else:
+            reward = 0
 
-        return rewards
+        return reward
 
     def print_env_state(self):
-        print("Env State: [", end="")
+        print("Env State: [", end="", file=self.f)
         for status in self.env_state:
-            print(f"{status.name} ", end="")
+            print(f"{status.name} ", end="", file=self.f)
 
-        print("]")
+        print("]", file=self.f)
 
 
 def run():
 
-    env = Environment()
+    path = "food_allocation/results/log.txt"
+    f = open(path, mode="w", encoding="UTF-8")
 
-    print(f"\n本部の在庫: {FOODS}")
-    print(f"エージェント数: {AGENTS_COUNT}")
-    print(f"エージェントの要求リスト: {REQUESTS}\n")
+    env = Environment(f)
+
+    print(f"\n本部の在庫: {FOODS}", file=f)
+    print(f"エージェント数: {AGENTS_COUNT}", file=f)
+    print(f"エージェントの要求リスト: {REQUESTS}\n", file=f)
 
     result_reward_x = []
     result_reward_y = []
@@ -239,20 +244,25 @@ def run():
     plt.ylabel("Reward")
     # plt.text(800, self.min_distance_history[0], "ε={}".format(EPSILON))
 
-    line1, = ax.plot([], [])
-    line2, = ax.plot([], [])
-    line3, = ax.plot([], [])
+    line1, = ax.plot([], [], label="Agent1")
+    line2, = ax.plot([], [], label="Agent2")
+    line3, = ax.plot([], [], label="Agent3")
+
+    ax.legend()
 
     lines = [line1, line2, line3]
 
     # lines2, = plt.plot(x2, y2, zorder=1)
 
+    # 各エピソード
     for episode in range(MAX_EPISODES):
 
         if episode % GREEDY_CYCLE == 0:
             greedy = True
             print(
                 f"-------------- Episode:{episode} (greedy) --------------")
+            print(
+                f"-------------- Episode:{episode} (greedy) --------------", file=f)
             # print(f"EPSILON: {epsilon:.3f}")
             # print(f"ALPHA: {alpha:.3f}")
         else:
@@ -261,24 +271,25 @@ def run():
             #     f"-------------- Episode:{episode} --------------")
         states = [[], [], []]
         actions = [[], [], []]
-        rewards = []
+        rewards = [0, 0, 0]
 
         old_states = env.reset()
         old_actions = []
-        old_rewards = []
 
-        all_agent_done = False
+        learning_complete = False
         step = 0
 
+        # 各ステップ
         while True:
-            if greedy and episode == MAX_EPISODES - 1:
-                print(f"\n------- Step:{step} -------")
+            if greedy:
+                print(f"\n------- Step:{step} -------", file=f)
 
+            # 各エージェント
             for index, agent in enumerate(env.agents):
-                if greedy and episode == MAX_EPISODES - 1:
-                    print(f"本部の在庫: {env.stock}")
+                if greedy:
+                    print(f"本部の在庫: {env.stock}", file=f)
                     diff = agent.old_env_stock - env.stock
-                    print(f"{agent.name} 前回からの変化:{diff}")
+                    print(f"{agent.name} 前回からの変化:{diff}", file=f)
 
                 # 状態を観測
                 state = agent.observe_state(env.stock, FOODS)
@@ -289,7 +300,7 @@ def run():
                     state, env.stock, greedy, epsilon)
                 actions[index] = action
 
-                if greedy and episode == MAX_EPISODES - 1:
+                if greedy:
                     agent.print_state(state)
                     # print(state)
                     if action == NUM_FOODS:
@@ -298,7 +309,7 @@ def run():
                         action_string = f"食品{action}"
 
                     print(
-                        f"Q:{agent.brain.Q[state]} 行動: {action_string}")
+                        f"Q:{agent.brain.Q[state]} 行動: {action_string}", file=f)
 
                 # 行動をとる
                 if action != NUM_FOODS:
@@ -307,47 +318,39 @@ def run():
                     # 本部の在庫が1つ減る
                     env.stock[action] -= 1
 
-                # 分配終了確認
+                # 終了条件確認
                 food_done = env.check_food_run_out()
-                if agent.done or food_done:
+                all_agents_done = env.check_agents_food_done()
+                exceed_max_step = step == MAX_STEPS - 1
+
+                episode_terminal = food_done or all_agents_done or exceed_max_step
+
+                reward = env.get_reward(agent, episode_terminal, greedy)
+
+                if old_states is not None:
+                    agent.learn(
+                        old_states[index], old_actions[index], reward, state, alpha)
+
+                if episode_terminal:
                     if greedy:
-                        print(f"\n{agent.name} ****** 終了条件を満たしています! ******")
-                    # TODO: 学習
-                    reward =
+                        print("*** 終了条件を満たしています ***", file=f)
+                        print(f"{agent.name} 学習終了\n", file=f)
+                    rewards[index] = reward
+                    agent.learning_done = True
+                    learning_complete = env.check_agents_learning_done()
+                    if learning_complete:
+                        break
 
-                all_agent_done = env.check_all_agent_done()
-                if all_agent_done:
-                    break
+            if exceed_max_step and greedy:
+                print("最大ステップ数を超えました", file=f)
 
-            if all_agent_done:
-                # 終了時は各エージェントの報酬を計算
-                # print("\n****** 終了条件を満たしています！ ******")
-                rewards = env.get_rewards(greedy)
-                if greedy:
-                    print(rewards)
-
-            else:
-                # 終了時以外、報酬は0
-                rewards = [0] * AGENTS_COUNT
-
-            if step == MAX_STEPS - 1:
-                rewards = env.get_rewards(greedy)
-                if greedy:
-                    print("最大ステップ数を超えました")
-
-            if old_states is not None:
-                env.learn(old_states, old_actions, rewards, states, alpha)
-
-            if done or step == MAX_STEPS - 1:
+            if learning_complete:
                 break
 
             old_states = copy.deepcopy(states)
             old_actions = copy.deepcopy(actions)
-            # old_rewards = copy.deepcopy(rewards)
 
             step += 1
-
-            # print(states)
 
         # best_reward = np.amin(n)
         # if rewards[0] > optimal_reward:
@@ -370,7 +373,7 @@ def run():
             alpha = alpha - ALPHA_DELTA
 
         if greedy:
-            print(f"要したステップ数: {step}")
+            print(f"要したステップ数: {step}", file=f)
             # print(f"現在のエピソード: {episode}")
             # result_reward_x.append(episode)
             # result_reward_y.append(rewards[0])
@@ -379,8 +382,8 @@ def run():
             # lines1.set_data(result_reward_x, result_reward_y)
             result_agent_x.append(episode)
 
-            for agent, line, result in zip(env.agents, lines, results_agents_y):
-                result.append(agent.get_satisfaction())
+            for i, agent, line, result in zip(range(AGENTS_COUNT), env.agents, lines, results_agents_y):
+                result.append(rewards[i])
                 line.set_data(result_agent_x, result)
 
             # lines1.set_data(result_agents_x, result_agent1_y)

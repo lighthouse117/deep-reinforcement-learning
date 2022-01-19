@@ -6,18 +6,20 @@ from status import StockRemaining, StockChange, Satisfaction
 
 
 class Agent:
-    def __init__(self, name, max_units, num_foods, requests):
+    def __init__(self, name, max_units, num_foods, requests, f):
         # num_states = pow(max_units, 2 * num_foods)
         # num_actions = num_foods + 1
         self.name = name
         self.NUM_FOODS = num_foods
-        self.brain = Brain(num_foods)
+        self.brain = Brain(num_foods, f)
         self.REQUESTS = np.array(requests)
+        self.f = f
 
     def reset(self, env_stock):
         self.current_requests = self.REQUESTS.copy()
         self.stock = np.zeros(self.NUM_FOODS, dtype=np.int64)
-        self.done = False
+        self.food_done = False
+        self.learning_done = False
         self.old_env_stock = env_stock.copy()
 
     def learn(self, state, action, reward, state_next, alpha):
@@ -62,6 +64,7 @@ class Agent:
             # return action
 
         # 「何もしない」という選択肢も候補に加える
+
         action_options.append(len(self.REQUESTS))
 
         # if greedy:
@@ -154,10 +157,15 @@ class Agent:
         # 要求リストから1つ減らす
         self.current_requests[food] -= 1
 
+        self.check_satisfied()
+
+    def check_satisfied(self):
         if np.all(self.current_requests == 0):
             # 要求がすべて満たされたことを記録
             self.done = True
             # print(f"{self.name} 要求がすべて満たされました")
+
+        # TODO: 食品ごとに調べる（要求があっても食品の在庫がない場合）
 
     def get_satisfaction(self):
         diffs = self.REQUESTS - self.stock
@@ -182,15 +190,15 @@ class Agent:
 
     def print_state(self, state):
         num = self.NUM_FOODS
-        print(f"{self.name} State: ", end="")
+        print(f"{self.name} State: ", end="", file=self.f)
 
-        print("Remaining[ ", end="")
+        print("Remaining[ ", end="", file=self.f)
         for i in range(num):
-            print(f"{state[i].name} ", end="")
-        print("], Change[ ", end="")
+            print(f"{state[i].name} ", end="", file=self.f)
+        print("], Change[ ", end="", file=self.f)
         for i in range(num, num * 2):
-            print(f"{state[i].name} ", end="")
-        print("], Satisfaction[ ", end="")
+            print(f"{state[i].name} ", end="", file=self.f)
+        print("], Satisfaction[ ", end="", file=self.f)
         for i in range(num * 2, num * 3):
-            print(f"{state[i].name} ", end="")
-        print("]")
+            print(f"{state[i].name} ", end="", file=self.f)
+        print("]", file=self.f)

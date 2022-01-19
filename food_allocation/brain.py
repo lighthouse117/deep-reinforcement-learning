@@ -10,7 +10,8 @@ GAMMA = 0.99
 
 
 class Brain:
-    def __init__(self, num_foods):
+    def __init__(self, num_foods, f):
+        self.f = f
         shape = []
         # 状態数
         for i in range(num_foods):
@@ -25,7 +26,7 @@ class Brain:
 
         self.Q = np.full(shape, -1000.0)
         # self.Q = np.zeros(shape)
-        print(f"Q shape: {shape} 要素数: {self.Q.size}")
+        print(f"Q shape: {shape} 要素数: {self.Q.size}", file=self.f)
 
     def update_Q(self, state, action, reward, state_next, alpha):
 
