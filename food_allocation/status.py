@@ -20,4 +20,8 @@ class Satisfaction(IntEnum):
     SOMEWHAT = 1
     COMLETELY = 2
     OVERLY = 3
-    pass
+
+
+class Progress(IntEnum):
+    ONGOING = 0
+    DONE = 1

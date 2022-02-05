@@ -2,23 +2,21 @@
 
 import numpy as np
 from brain import Brain
-from status import StockRemaining, StockChange, Satisfaction
+from status import StockRemaining, StockChange, Satisfaction, Progress
+from config import EnvironmentSettings as es
 
 
 class Agent:
-    def __init__(self, name, max_units, num_foods, requests, f):
-        # num_states = pow(max_units, 2 * num_foods)
-        # num_actions = num_foods + 1
+    def __init__(self, name, request, f):
         self.name = name
-        self.NUM_FOODS = num_foods
-        self.brain = Brain(num_foods, f)
-        self.REQUESTS = np.array(requests)
+        self.REQUEST = request
+        self.brain = Brain(f)
         self.f = f
 
     def reset(self, env_stock, greedy):
+        self.current_requests = self.REQUEST.copy()
+        self.stock = np.zeros(es.NUM_FOODS, dtype=np.int64)
 
-        self.current_requests = self.REQUESTS.copy()
-        self.stock = np.zeros(self.NUM_FOODS, dtype=np.int64)
         self.food_done = False
         self.learning_done = False
         self.old_env_stock = env_stock.copy()
@@ -33,7 +31,12 @@ class Agent:
         #     self.print_state(state_next)
         # print(f"action: {action}")
         # print(f"reward: {reward}")
-        self.brain.update_Q(state, action, reward, state_next, alpha, greedy)
+        if state == state_next:
+            if greedy:
+                print(f"{self.name}: 状態が変化していません", file=self.f)
+        else:
+            self.brain.update_Q(state, action, reward,
+                                state_next, alpha, greedy)
         # print(f"{self.name} Q値を更新")
 
     # 行動（どの食品を取得するか）を決定
@@ -68,7 +71,7 @@ class Agent:
 
         # 「何もしない」という選択肢も候補に加える
 
-        action_options.append(len(self.REQUESTS))
+        action_options.append(es.NUM_FOODS)
 
         # if greedy:
         #     print(self.name + "  ", end="")
@@ -86,13 +89,14 @@ class Agent:
 
         return action
 
-    def observe_state(self, env_stock, original_foods):
+    def observe_state(self, env_stock, episode_terminal):
         remainings = []
         changes = []
         satisfactions = []
+        progress = []
 
         granularity = len(StockRemaining) - 2
-        for amount, original in zip(env_stock, original_foods):
+        for amount, original in zip(env_stock, es.FOODS):
             section = round(original / granularity)
             if amount == 0:
                 remainings.append(StockRemaining.NONE)
@@ -114,7 +118,7 @@ class Agent:
             else:
                 changes.append(StockChange.GREATLY)
 
-        satisfaction_rates = self.stock / self.REQUESTS
+        satisfaction_rates = self.stock / self.REQUEST
         for rate in satisfaction_rates:
             # print(f"satisfaction = {diff}")
             if rate < 0.5:
@@ -126,7 +130,14 @@ class Agent:
             else:
                 satisfactions.append(Satisfaction.OVERLY)
 
-        state = tuple(remainings + changes + satisfactions)
+        if episode_terminal:
+            progress.append(Progress.DONE)
+        else:
+            progress.append(Progress.ONGOING)
+
+        state = tuple(remainings + changes + satisfactions + progress)
+
+        # state = tuple(remainings + satisfactions + progress)
 
         self.old_env_stock = env_stock.copy()
 
@@ -154,7 +165,7 @@ class Agent:
 
     #     return state
 
-    def get_food(self, food):
+    def grab_food(self, food):
         # 手元の在庫が1つ増える
         self.stock[food] += 1
         # 要求リストから1つ減らす
@@ -171,10 +182,12 @@ class Agent:
         # TODO: 食品ごとに調べる（要求があっても食品の在庫がない場合）
 
     def get_satisfaction(self):
-        diffs = self.REQUESTS - self.stock
-        diff_rates = diffs / self.REQUESTS * 10
+        diffs = self.REQUEST - self.stock
+        diff_rates = diffs / self.REQUEST * 10
         abs_diffs = np.absolute(diff_rates)
         satisfaction = - np.sum(abs_diffs)
+
+        self.satisfaction = satisfaction
         return satisfaction
 
     # def get_reward(self):
@@ -192,7 +205,7 @@ class Agent:
         #     return loss
 
     def print_state(self, state):
-        num = self.NUM_FOODS
+        num = es.NUM_FOODS
         print(f"{self.name} State: ", end="", file=self.f)
 
         print("Remaining[ ", end="", file=self.f)
@@ -204,4 +217,14 @@ class Agent:
         print("], Satisfaction[ ", end="", file=self.f)
         for i in range(num * 2, num * 3):
             print(f"{state[i].name} ", end="", file=self.f)
-        print("]", file=self.f)
+
+        print(f"] Progress[{state[num * 3].name}]", file=self.f)
+
+        # print("Remaining[ ", end="", file=self.f)
+        # for i in range(num):
+        #     print(f"{state[i].name} ", end="", file=self.f)
+        # print("], Satisfaction[ ", end="", file=self.f)
+        # for i in range(num, num * 2):
+        #     print(f"{state[i].name} ", end="", file=self.f)
+
+        # print(f"] Progress[{state[num * 2].name}]", file=self.f)

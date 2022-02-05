@@ -3,31 +3,35 @@
 import random
 import numpy as np
 
-from status import StockRemaining, StockChange, Satisfaction
-
-GAMMA = 0.99
-# ALPHA = 0.01
+from status import StockRemaining, StockChange, Satisfaction, Progress
+from config import LearningParameters as lp
+from config import EnvironmentSettings as es
 
 
 class Brain:
-    def __init__(self, num_foods, f):
+    def __init__(self, f):
         self.f = f
         self.TDs = []
+        self.max_TD = 0.0
         shape = []
+
         # 状態数
-        for i in range(num_foods):
+        for i in range(es.NUM_FOODS):
             shape.append(len(StockRemaining))
-        for i in range(num_foods):
+        for i in range(es.NUM_FOODS):
             shape.append(len(StockChange))
-        for i in range(num_foods):
+        for i in range(es.NUM_FOODS):
             shape.append(len(Satisfaction))
+        shape.append(len(Progress))
 
         # 行動数
-        shape.append(num_foods + 1)
+        shape.append(es.NUM_FOODS + 1)
 
-        self.Q = np.full(shape, -1000.0)
+        # Qテーブルを初期化
+        self.Q = np.full(shape, -1.0)
         # self.Q = np.zeros(shape)
-        print(f"Q shape: {shape} 要素数: {self.Q.size}", file=self.f)
+
+        print(f"Qテーブルのshpae: {shape}   要素数: {self.Q.size:,}", file=self.f)
 
     def update_Q(self, state, action, reward, state_next, alpha, greedy):
         if state_next is None:
@@ -40,14 +44,20 @@ class Brain:
             #         break
             max_Q = np.amax(self.Q[state_next])
             # print(max_Q)
-            target = reward + GAMMA * max_Q
+            target = reward + lp.GAMMA * max_Q
 
         predict = self.Q[state][action]
 
         diff = target - predict
 
-        if greedy:
-            self.TDs.append(diff)
+        td = abs(diff)
+
+        self.TDs.append(td)
+        if td > self.max_TD:
+            self.max_TD = td
+
+        # if reward == -60:
+        #     print(f"前: {self.Q[state][action]}")
 
         # if abs(diff) > 50:
         #     pass
@@ -56,6 +66,12 @@ class Brain:
 
         self.Q[state][action] = self.Q[state][action] + alpha * diff
 
+        # if reward == -60:
+        #     print(f"後: {self.Q[state][action]}\n")
+
+        # if self.Q[state][action] != 0:
+        #     print(self.Q[state][action])
+
         # print(reward)
 
         # print(f"after: {self.Q[state][action]}\n")
@@ -63,6 +79,7 @@ class Brain:
         # print(self.Q[state])
 
     # 選択肢の中から行動を決定
+
     def get_action(self, state, options, greedy, epsilon):
         # state = self.convert_state(enum_state)
 
@@ -113,6 +130,11 @@ class Brain:
         return action
 
     def get_TD_average(self):
-        TD_ave = np.average(np.array(self.TDs))
-        print(f"TD誤差の平均: {TD_ave:.3f}")
-        self.TDs = []
+        if self.TDs:
+            TD_ave = np.average(np.array(self.TDs))
+            # print(self.TDs)
+            print(
+                f"TD誤差 {len(self.TDs)}回分の平均: {TD_ave:.5f}  最大値: {self.max_TD:.5f}", file=self.f)
+            print(f"TD誤差の平均: {TD_ave:.5f}  最大値: {self.max_TD:.5f}")
+            self.max_TD = 0
+            self.TDs = []
