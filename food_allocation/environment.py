@@ -1,11 +1,14 @@
 # Environmentクラス
 from typing import List
 import numpy as np
-from agent import Agent
-from status import StockRemaining, StockChange, Satisfaction, Progress
 import matplotlib.pyplot as plt
 import copy
 import datetime
+import os
+
+
+from agent import Agent
+from status import StockRemaining, StockChange, Satisfaction, Progress
 from config import LearningParameters as lp
 from config import EnvironmentSettings as es
 
@@ -200,11 +203,13 @@ def run():
     np.set_printoptions(precision=5, floatmode='maxprec_equal')
     np.set_printoptions(suppress=True)
 
+    DIR_PATH = "D:\\Lighthouse\\Documents\\Reinforcement Learning\\Food Distribution\\results"
+
     start_time = datetime.datetime.now()
     file_name_time = "{0:%Y-%m-%d_%H%M%S}".format(start_time)
-    log_file_name = f"log_{file_name_time}.txt"
 
-    path = "food_allocation/results/logs/" + log_file_name
+    log_file_name = f"log_{file_name_time}.txt"
+    path = os.path.join(DIR_PATH, "logs", log_file_name)
     f = open(path, mode="w", encoding="UTF-8")
 
     print("開始時刻: {0:%Y/%m/%d %H:%M:%S}\n".format(start_time), file=f)
@@ -471,7 +476,7 @@ def run():
     print("\n終了時刻: {0:%Y/%m/%d %H:%M:%S}".format(end_time), file=f)
 
     figure_file_name = f"figure_{file_name_time}.png"
-    path = "food_allocation/results/figures/" + figure_file_name
+    path = os.path.join(DIR_PATH, "figures", figure_file_name)
     plt.savefig(path)
 
     print("\n\n終了")

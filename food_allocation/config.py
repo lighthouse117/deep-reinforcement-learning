@@ -1,5 +1,5 @@
 class LearningParameters:
-    MAX_EPISODES = 3000001
+    MAX_EPISODES = 101
     MAX_STEPS = 100
     GREEDY_CYCLE = 1000
 
