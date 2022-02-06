@@ -28,8 +28,8 @@ class Brain:
         shape.append(es.NUM_FOODS + 1)
 
         # Qテーブルを初期化
-        # self.Q = np.full(shape, -1.0)
-        self.Q = np.zeros(shape)
+        self.Q = np.full(shape, -1.0)
+        # self.Q = np.zeros(shape)
 
         print(f"Qテーブルのshpae: {shape}   要素数: {self.Q.size:,}", file=self.f)
 
@@ -38,6 +38,13 @@ class Brain:
         if state_next[-1] is Progress.DONE:
             target = reward
         else:
+            # sorted_Q = np.sort(self.Q[state_next])[::-1]
+            # # print(sorted_Q)
+            # for value in sorted_Q:
+            #     if(value != 0):
+            #         break
+            # max_Q = np.amax(self.Q[state_next])
+            # target = reward + lp.GAMMA * max_Q
             next_Q = []
             for i in range(es.NUM_FOODS):
                 if state_next[i] != StockRemaining.NONE:
@@ -46,6 +53,18 @@ class Brain:
 
             max_Q = max(next_Q)
             target = reward + lp.GAMMA * max_Q
+
+        # if state_next[-1] is Progress.DONE:
+        #     target = reward
+        # else:
+        #     next_Q = []
+        #     for i in range(es.NUM_FOODS):
+        #         if state_next[i] != StockRemaining.NONE:
+        #             next_Q.append(self.Q[state_next][i])
+        #     next_Q.append(self.Q[state_next][-1])
+
+        #     max_Q = max(next_Q)
+        #     target = reward + lp.GAMMA * max_Q
 
         current = self.Q[state][action]
 
@@ -139,3 +158,14 @@ class Brain:
             print(f"TD誤差の平均: {TD_ave:.5f}  最大値: {self.max_TD:.5f}")
             self.max_TD = 0
             self.TDs = []
+
+    def Q_str(self, state):
+        q = []
+        for i in range(es.NUM_FOODS):
+            if state[i] == StockRemaining.NONE:
+                q.append(None)
+            else:
+                q.append(self.Q[state][i])
+        q.append(self.Q[state][-1])
+
+        return np.array2string(np.array(q))

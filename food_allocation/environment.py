@@ -92,13 +92,9 @@ class Environment:
 
     def get_reward(self, target_agent: Agent, terminal, greedy):
         if terminal:
-            # satisfactions = []
 
             # remaining = np.sum(self.stock)
 
-            # for agent in self.agents:
-            #     s = agent.get_satisfaction()
-            #     satisfactions.append(s)
             # average = np.average(satisfactions)
 
             # if greedy:
@@ -120,7 +116,14 @@ class Environment:
 
             #     reward = 1 / (abs_deviation + remaining)
 
-            reward = - target_agent.get_violation()
+            violations = []
+            for agent in self.agents:
+                v = agent.get_violation()
+                violations.append(v)
+
+            var = np.std(violations)
+
+            reward = - (target_agent.get_violation() + var)
 
             if greedy:
                 # print(
@@ -209,9 +212,9 @@ def run():
     ax2.set_xlabel("Episode")
     ax3.set_xlabel("Episode")
 
-    ax1.set_ylabel("Reward")
-    ax2.set_ylabel("Average")
-    ax3.set_ylabel("Deviation")
+    ax1.set_ylabel("Constraint Violations")
+    ax2.set_ylabel("Mean")
+    ax3.set_ylabel("Variance")
 
     # plt.xlim(0,)
     # plt.ylim(top=0)
@@ -302,7 +305,7 @@ def run():
                             action_string = f"食品{action}"
 
                         print(
-                            f"{agent.name}のQ値:{agent.brain.Q[state]} 選択した行動: {action_string}", file=f)
+                            f"{agent.name}のQ値:{agent.brain.Q_str(state)} 選択した行動: {action_string}", file=f)
 
                     # 行動をとる
                     if action != es.NUM_FOODS:
@@ -366,13 +369,13 @@ def run():
             violations = []
             for agent, reward in zip(env.agents, rewards):
                 print(
-                    f"{agent.name}の在庫: {agent.stock}  制約違反数: {agent.violation}  報酬: {reward}", file=f)
+                    f"{agent.name}の在庫: {agent.stock}  制約違反数: {agent.violation}  報酬: {reward:.3f}", file=f)
                 violations.append(agent.violation)
 
             ave = np.average(violations)
-            st_dev = np.std(violations)
+            var = np.std(violations)
 
-            print(f"制約違反数の平均: {ave:.3f}  分散: {st_dev:.3f}", file=f)
+            print(f"制約違反数の平均: {ave:.3f}  分散: {var:.3f}", file=f)
             # print(f"現在のエピソード: {episode}")
             # result_reward_x.append(episode)
             # result_reward_y.append(rewards[0])
@@ -381,7 +384,7 @@ def run():
             # lines1.set_data(result_reward_x, result_reward_y)
             result_agent_x.append(episode)
             result_ave.append(ave)
-            result_dev.append(st_dev)
+            result_dev.append(var)
 
             for i, agent, line, result in zip(range(es.AGENTS_COUNT), env.agents, lines, results_agents_y):
                 # result.append(rewards[i])
