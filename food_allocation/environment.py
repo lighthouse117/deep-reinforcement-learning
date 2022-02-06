@@ -120,7 +120,7 @@ class Environment:
 
             #     reward = 1 / (abs_deviation + remaining)
 
-            reward = - target_agent.get_violation
+            reward = - target_agent.get_violation()
 
             if greedy:
                 # print(
@@ -363,16 +363,16 @@ def run():
                 f"************ Episode{episode}の結果 ************", file=f)
             print(f"要したステップ数: {step}", file=f)
             print(f"食品の残り個数: {np.sum(env.stock)}", file=f)
-            satisfactions = []
+            violations = []
             for agent, reward in zip(env.agents, rewards):
                 print(
-                    f"{agent.name}の在庫: {agent.stock}  満足度: {agent.satisfaction}  報酬: {reward}", file=f)
-                satisfactions.append(agent.satisfaction)
+                    f"{agent.name}の在庫: {agent.stock}  制約違反数: {agent.violation}  報酬: {reward}", file=f)
+                violations.append(agent.violation)
 
-            ave = np.average(satisfactions)
-            st_dev = np.std(satisfactions)
+            ave = np.average(violations)
+            st_dev = np.std(violations)
 
-            print(f"満足度の平均: {ave:.3f}  分散: {st_dev:.3f}", file=f)
+            print(f"制約違反数の平均: {ave:.3f}  分散: {st_dev:.3f}", file=f)
             # print(f"現在のエピソード: {episode}")
             # result_reward_x.append(episode)
             # result_reward_y.append(rewards[0])
@@ -384,7 +384,8 @@ def run():
             result_dev.append(st_dev)
 
             for i, agent, line, result in zip(range(es.AGENTS_COUNT), env.agents, lines, results_agents_y):
-                result.append(rewards[i])
+                # result.append(rewards[i])
+                result.append(violations[i])
                 line.set_data(result_agent_x, result)
 
             line_ave.set_data(result_agent_x, result_ave)

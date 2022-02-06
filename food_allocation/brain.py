@@ -28,27 +28,28 @@ class Brain:
         shape.append(es.NUM_FOODS + 1)
 
         # Qテーブルを初期化
-        self.Q = np.full(shape, -1.0)
-        # self.Q = np.zeros(shape)
+        # self.Q = np.full(shape, -1.0)
+        self.Q = np.zeros(shape)
 
         print(f"Qテーブルのshpae: {shape}   要素数: {self.Q.size:,}", file=self.f)
 
     def update_Q(self, state, action, reward, state_next, alpha, greedy):
-        if state_next is None:
+
+        if state_next[-1] is Progress.DONE:
             target = reward
         else:
-            # sorted_Q = np.sort(self.Q[state_next])[::-1]
-            # # print(sorted_Q)
-            # for value in sorted_Q:
-            #     if(value != 0):
-            #         break
-            max_Q = np.amax(self.Q[state_next])
-            # print(max_Q)
+            next_Q = []
+            for i in range(es.NUM_FOODS):
+                if state_next[i] != StockRemaining.NONE:
+                    next_Q.append(self.Q[state_next][i])
+            next_Q.append(self.Q[state_next][-1])
+
+            max_Q = max(next_Q)
             target = reward + lp.GAMMA * max_Q
 
-        predict = self.Q[state][action]
+        current = self.Q[state][action]
 
-        diff = target - predict
+        diff = target - current
 
         td = abs(diff)
 

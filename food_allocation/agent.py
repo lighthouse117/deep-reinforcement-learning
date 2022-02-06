@@ -185,9 +185,9 @@ class Agent:
         diffs = self.REQUEST - self.stock
         diff_rates = diffs / self.REQUEST * 10
         abs_diffs = np.absolute(diff_rates)
-        violation = - np.sum(abs_diffs)
+        violation = np.sum(abs_diffs)
 
-        self.satisfaction = violation
+        self.violation = violation
         return violation
 
     # def get_reward(self):
