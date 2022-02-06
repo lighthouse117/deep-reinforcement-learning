@@ -64,69 +64,6 @@ class Environment:
                 pass
         return actions
 
-    # def step(self, old_states, greedy, epsilon, episode):
-    #     states = []
-    #     actions = []
-    #     rewards = []
-
-    #     # すべてのエージェントに対して
-    #     for agent in self.agents:
-
-    #         state = agent.observe_state(self.stock, FOODS)
-    #         states.append(state)
-
-    #         # 行動を決定
-    #         action = agent.decide_action(
-    #             state, self.stock, greedy, epsilon)
-
-    #         if greedy and episode == MAX_EPISODES - 1:
-    #             print(f"本部の在庫: {self.stock}")
-    #             agent.print_state(state)
-
-    #             diff = agent.stock - agent.REQUESTS
-    #             if action == NUM_FOODS:
-    #                 action_string = "何もしない"
-    #             else:
-    #                 action_string = f"食品{action}"
-
-    #             print(
-    #                 f"{agent.brain.Q[state]} 要求との差:{diff} 行動: {action_string}")
-
-    #         actions.append(action)
-
-    #         if action != NUM_FOODS:
-    #             # エージェントが食品を1つとる
-    #             agent.get_food(action)
-    #             # 本部の在庫が1つ減る
-    #             self.stock[action] -= 1
-
-    #             # if agent.current_requests[action] == 0:
-    #             #     rewards.append(-50)
-    #             # else:
-    #             #     rewards.append(0)
-
-    #         # 分配終了確認
-    #         done = self.check_done()
-
-    #         # if done:
-
-    #         # if greedy and episode == MAX_EPISODES - 1:
-    #         #     print(f"本部の在庫（更新前）: {old_stock}")
-    #         #     print(f"本部の在庫（更新後）: {self.stock}")
-
-    #         # 次の状態へ遷移
-    #         # self.env_state = self.get_env_state_next(old_stock)
-
-    #     if done:
-    #         # 終了時は各エージェントの報酬を計算
-    #         # print("\n****** 終了条件を満たしています！ ******")
-    #         rewards = self.get_rewards()
-    #     else:
-    #         # 終了時以外、報酬は0
-    #         rewards = [0] * AGENTS_COUNT
-
-    #     return actions, states, rewards, done
-
     def check_food_run_out(self):
         # 全ての在庫が0になったかチェック
         return np.all(self.stock == 0)
@@ -155,26 +92,27 @@ class Environment:
 
     def get_reward(self, target_agent: Agent, terminal, greedy):
         if terminal:
-            satisfactions = []
+            # satisfactions = []
 
-            remaining = np.sum(self.stock)
+            # remaining = np.sum(self.stock)
 
-            for agent in self.agents:
-                s = agent.get_satisfaction()
-                satisfactions.append(s)
-            average = np.average(satisfactions)
+            # for agent in self.agents:
+            #     s = agent.get_satisfaction()
+            #     satisfactions.append(s)
+            # average = np.average(satisfactions)
 
-            if greedy:
-                # print(f"損失の標準偏差: {deviation:.1f}")
-                print(f"満足度の平均: {average:.2f}", file=self.f)
-                print(f"食品の残り個数: {remaining}", file=self.f)
-                pass
+            # if greedy:
+            #     # print(f"損失の標準偏差: {deviation:.1f}")
+            #     print(f"満足度の平均: {average:.2f}", file=self.f)
+            #     print(f"食品の残り個数: {remaining}", file=self.f)
+            #     pass
 
-            target_satisfaction = target_agent.satisfaction
-            abs_deviation = np.absolute(average - target_satisfaction)
+            # target_satisfaction = target_agent.satisfaction
+            # abs_deviation = np.absolute(average - target_satisfaction)
 
             # reward = - (abs_deviation + remaining * 10)
-            reward = - (abs_deviation + remaining)
+            # reward = - (abs_deviation + remaining)
+
             # print(abs_deviation + remaining)
             # if (abs_deviation + remaining) == 0.0:
             #     reward = 10
@@ -182,10 +120,15 @@ class Environment:
 
             #     reward = 1 / (abs_deviation + remaining)
 
+            reward = - target_agent.get_violation
+
             if greedy:
+                # print(
+                #     f"{target_agent.name}: 報酬{reward:.3f} 絶対偏差{abs_deviation:.1f} 満足度{target_satisfaction:.1f} 要求{target_agent.REQUEST} 在庫{target_agent.stock}", file=self.f)
+
                 print(
-                    f"{target_agent.name}: 報酬{reward:.3f} 絶対偏差{abs_deviation:.1f} 満足度{target_satisfaction:.1f} 要求{target_agent.REQUEST} 在庫{target_agent.stock}", file=self.f)
-                pass
+                    f"{target_agent.name}: 報酬{reward:.3f}  要求{target_agent.REQUEST} 在庫{target_agent.stock}", file=self.f)
+
         else:
             reward = -1
 

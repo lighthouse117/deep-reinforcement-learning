@@ -181,14 +181,14 @@ class Agent:
 
         # TODO: 食品ごとに調べる（要求があっても食品の在庫がない場合）
 
-    def get_satisfaction(self):
+    def get_violation(self):
         diffs = self.REQUEST - self.stock
         diff_rates = diffs / self.REQUEST * 10
         abs_diffs = np.absolute(diff_rates)
-        satisfaction = - np.sum(abs_diffs)
+        violation = - np.sum(abs_diffs)
 
-        self.satisfaction = satisfaction
-        return satisfaction
+        self.satisfaction = violation
+        return violation
 
     # def get_reward(self):
 
