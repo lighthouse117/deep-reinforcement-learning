@@ -118,6 +118,6 @@ class Qnetwork:
             (1 - done) * future_return
         loss, td_error = \
             self.trainable_network.train_on_batch(
-             [state, action_mask], np.expand_dims(y, -1))
+                [state, action_mask], np.expand_dims(y, -1))
 
         return loss, td_error
