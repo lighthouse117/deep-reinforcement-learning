@@ -1,11 +1,11 @@
 # Environmentクラス
+
 from typing import List
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
 import datetime
 import os
-
 
 from agent import Agent
 from status import StockRemaining, StockChange, Satisfaction, Progress
@@ -92,38 +92,31 @@ class Environment:
 
     def get_reward(self, target_agent: Agent, terminal, greedy):
         if terminal:
+            # - |制約違反度の平均からの偏差|
+            # violations = []
+            # for agent in self.agents:
+            #     v = agent.get_violation()
+            #     violations.append(v)
+            # mean = np.mean(violations)
+            # abs_deviation = np.absolute(mean - target_agent.get_violation())
+            # reward = - abs_deviation
 
-            # remaining = np.sum(self.stock)
-
-            # average = np.average(satisfactions)
-
-            # if greedy:
-            #     # print(f"損失の標準偏差: {deviation:.1f}")
-            #     print(f"満足度の平均: {average:.2f}", file=self.f)
-            #     print(f"食品の残り個数: {remaining}", file=self.f)
-            #     pass
-
-            # target_satisfaction = target_agent.satisfaction
-            # abs_deviation = np.absolute(average - target_satisfaction)
-
-            # reward = - (abs_deviation + remaining * 10)
-            # reward = - (abs_deviation + remaining)
-
-            # print(abs_deviation + remaining)
-            # if (abs_deviation + remaining) == 0.0:
-            #     reward = 10
-            # else:
-
-            #     reward = 1 / (abs_deviation + remaining)
-
+            # - (制約違反度 + 制約違反度の標準偏差)
             violations = []
             for agent in self.agents:
                 v = agent.get_violation()
                 violations.append(v)
+            std = np.std(violations)
+            reward = - (target_agent.get_violation() + std)
 
-            var = np.std(violations)
-
-            reward = - (target_agent.get_violation() + var)
+            # - (制約違反度の平均+標準偏差)　統一
+            # violations = []
+            # for agent in self.agents:
+            #     v = agent.get_violation()
+            #     violations.append(v)
+            # mean = np.mean(violations)
+            # std = np.std(violations)
+            # reward = - (mean + std)
 
             if greedy:
                 # print(
@@ -134,6 +127,7 @@ class Environment:
 
         else:
             reward = -1
+            # reward = 0
 
         return reward
 
@@ -154,9 +148,9 @@ def run():
     start_time = datetime.datetime.now()
     file_name_time = "{0:%Y-%m-%d_%H%M%S}".format(start_time)
 
-    log_file_name = f"log_{file_name_time}.txt"
-    path = os.path.join(DIR_PATH, "logs", log_file_name)
-    f = open(path, mode="w", encoding="UTF-8")
+    log_name = f"log_{file_name_time}.txt"
+    log_path = os.path.join(DIR_PATH, "logs", log_name)
+    f = open(log_path, mode="w", encoding="UTF-8")
 
     print("開始時刻: {0:%Y/%m/%d %H:%M:%S}\n".format(start_time), file=f)
 
@@ -179,6 +173,12 @@ def run():
     print(f"1エピソードごとのεの減少値: {lp.EPSILON_DELTA:.7f}", file=f)
     print("\n\n", file=f)
 
+    print("====================== 報酬設定 ======================", file=f)
+    print("- (制約違反度 + 制約違反度の標準偏差)", file=f)
+    # print("- |制約違反度の平均からの偏差|", file=f)
+    # print("- (制約違反度の平均 + 標準偏差) 統一", file=f)
+    print("\n\n", file=f)
+
     env = Environment(f)
 
     # result_reward_x = []
@@ -187,7 +187,7 @@ def run():
     # result_optimal_reward_x = []
     # result_optimal_reward_y = []
 
-    result_agent_x = []
+    result_episodes = []
     results_agents_y = [[], [], []]
 
     result_ave = []
@@ -369,30 +369,30 @@ def run():
             violations = []
             for agent, reward in zip(env.agents, rewards):
                 print(
-                    f"{agent.name}の在庫: {agent.stock}  制約違反数: {agent.violation}  報酬: {reward:.3f}", file=f)
+                    f"{agent.name}の在庫: {agent.stock}  制約違反度: {agent.violation}  報酬: {reward:.3f}", file=f)
                 violations.append(agent.violation)
 
-            ave = np.average(violations)
+            mean = np.average(violations)
             var = np.std(violations)
 
-            print(f"制約違反数の平均: {ave:.3f}  分散: {var:.3f}", file=f)
+            print(f"制約違反度の平均: {mean:.3f}  分散: {var:.3f}", file=f)
             # print(f"現在のエピソード: {episode}")
             # result_reward_x.append(episode)
             # result_reward_y.append(rewards[0])
             # result_optimal_reward_x.append(episode)
             # result_optimal_reward_y.append(optimal_reward)
             # lines1.set_data(result_reward_x, result_reward_y)
-            result_agent_x.append(episode)
-            result_ave.append(ave)
+            result_episodes.append(episode)
+            result_ave.append(mean)
             result_dev.append(var)
 
             for i, agent, line, result in zip(range(es.AGENTS_COUNT), env.agents, lines, results_agents_y):
                 # result.append(rewards[i])
                 result.append(violations[i])
-                line.set_data(result_agent_x, result)
+                line.set_data(result_episodes, result)
 
-            line_ave.set_data(result_agent_x, result_ave)
-            line_dev.set_data(result_agent_x, result_dev)
+            line_ave.set_data(result_episodes, result_ave)
+            line_dev.set_data(result_episodes, result_dev)
 
             # lines1.set_data(result_agents_x, result_agent1_y)
             # lines2.set_data(result_agents_x, result_agent2_y)
@@ -422,9 +422,16 @@ def run():
     end_time = datetime.datetime.now()
     print("\n終了時刻: {0:%Y/%m/%d %H:%M:%S}".format(end_time), file=f)
 
-    figure_file_name = f"figure_{file_name_time}.png"
-    path = os.path.join(DIR_PATH, "figures", figure_file_name)
-    plt.savefig(path)
+    figure_name = f"figure_{file_name_time}.png"
+    figure_path = os.path.join(DIR_PATH, "figures", figure_name)
+    plt.savefig(figure_path)
+
+    # csv_name = f"data_{file_name_time}.csv"
+    # csv_path = os.path.join(DIR_PATH, "data", csv_name)
+    # with open(csv_path, "w", newline='', encoding="UTF-8") as csv_f:
+    #     writer = csv.writer(csv_f)
+    #     writer.writerow(["Episode", "Distance"])
+    #     writer.writerows(self.result)
 
     print("\n\n終了")
 

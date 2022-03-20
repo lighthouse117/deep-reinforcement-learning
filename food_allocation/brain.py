@@ -72,6 +72,9 @@ class Brain:
 
         td = abs(diff)
 
+        if greedy:
+            print(f"現在の状態と前状態のTD誤差: {td}", file=self.f)
+
         self.TDs.append(td)
         if td > self.max_TD:
             self.max_TD = td

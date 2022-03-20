@@ -1,0 +1,165 @@
+commit 75504cb15ea14ec913e2f7edfd1a8cfcc7d77ac5
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Mon Feb 7 08:03:55 2022 +0900
+
+    報酬ペナルティを制約違反数+分散に
+
+commit f169fdc297343b93627c67cb247791ac59459262
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sun Feb 6 15:22:18 2022 +0900
+
+    次状態の最大のQ値を見積もる際、遷移不可能な状態のQ値を使用しない
+
+commit 9949a9fbaa62e17096d6e2cf025b85643bffa648
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sun Feb 6 11:56:14 2022 +0900
+
+    報酬を制約違反数のみに
+
+commit bdb45ebeca41dd1b52de528f0087d8c903ffdf01
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sat Feb 5 20:11:21 2022 +0900
+
+    ログ保存場所
+
+commit 8663877f5088b2b6644b2534af4c04505ccf6ca6
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sat Feb 5 19:18:44 2022 +0900
+
+    configでパラメータ管理
+    進行中or終了の状態を追加 & エピソード終了時の学習のタイミングを変更
+    状態表現StockChangesを削除
+
+commit 91723e93432d61d22deda8a573f799af0041440b
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Wed Jan 19 19:09:24 2022 +0900
+
+    TDの平均
+
+commit 5d4d0f167a0cbea691dc13540c71fac19ba458e3
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Wed Jan 19 17:44:51 2022 +0900
+
+    ログ出力
+
+commit 762c6d4631d0bb6064fd1bf2472f64a9e73e0bd2
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Wed Jan 12 19:39:21 2022 +0900
+
+    報酬設定を変更
+
+commit 8ced02c059b0c9329ae8414191394b666956bfdd
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Tue Dec 28 00:53:05 2021 +0900
+
+    エージェントが各自自分のタイミングで状態を観測する（修正途中）
+
+commit 8355c44e21a4d0919882d12e588f28941178a4d9
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sun Dec 26 00:21:34 2021 +0900
+
+    Q-tableの初期値を変更
+
+commit c8a0dd7120974fd58a2c362b40120a677b1060d4
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sat Dec 25 22:01:12 2021 +0900
+
+    グラフをリアルタイムで描画
+
+commit 6166a3674e4f611ee577ddaceac481779d8f0d08
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Fri Dec 24 14:13:51 2021 +0900
+
+    報酬設定の変更
+
+commit 7543fef0b457c2ac5fe16e60a3490cd430993c19
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Fri Dec 24 12:09:00 2021 +0900
+
+    満足度の状態定義を変更
+
+commit 668a119cd159d9e6b31baa50e06c3eefc0da1ea3
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Fri Dec 24 12:02:49 2021 +0900
+
+    イプシロンを線形減衰
+
+commit b53de73116047ea2984b3956fd8a8808131fbdbf
+Merge: 8d2b295 1f57782
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Mon Dec 20 16:39:30 2021 +0900
+
+    Merge branch 'master' of https://github.com/lighthouse117/deep-reinforcement-learning
+
+commit 8d2b295daa451ba5d79f2089c1aef275aeba2bae
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Mon Dec 20 16:38:58 2021 +0900
+
+    修正
+
+commit 1f57782092a75412db11e93b33c6fa59953b9027
+Merge: 8aa4579 b1259a0
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Mon Dec 20 16:36:00 2021 +0900
+
+    Merge branch 'master' of https://github.com/lighthouse117/deep-reinforcement-learning
+
+commit 8aa45791bef05bd66127605127745ac8b101629e
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Mon Dec 20 16:34:21 2021 +0900
+
+    cartpole sample
+
+commit b1259a0dcec9e9305804e7be56d444afcd5d5782
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Fri Dec 17 14:45:39 2021 +0900
+
+    状態を細分化
+
+commit 64e76e3997bc538615b04a3669f9226cba3462c9
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Fri Dec 17 13:52:53 2021 +0900
+
+    要求が満たされた後も自由に行動
+
+commit ad51e186a25229c7d1bb6ec1d59872faccec6c9e
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Thu Dec 16 17:13:48 2021 +0900
+
+    報酬を負から正に変更
+
+commit dbc82d01caaf45bf00c6cbb5e271926657bdada1
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Thu Dec 16 10:21:27 2021 +0900
+
+    状態定義Ver.2 試作
+
+commit b492bf0cea9f3a780bc6ce772286425872e2ef5c
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Thu Dec 9 01:23:03 2021 +0900
+
+    食品分配のテスト
+
+commit 429b356102139cb300503a4744fdfdbd0adcdb9a
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Fri Dec 3 21:18:06 2021 +0900
+
+    formatting
+
+commit aa66bb864694586e6145432c2a66caabe7faecfc
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sat Oct 16 20:04:58 2021 +0900
+
+    動作確認
+
+commit 98c46df89abc793e014a9714dc52f3d6fcf1d353
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Sat Oct 16 04:51:29 2021 +0900
+
+    コメントを書きながら、ざっと理解
+
+commit b9247206d07d0aa0bc0cb0b055232819fafc8c63
+Author: lighthouse117 <lighthouse.happy@gmail.com>
+Date:   Thu Oct 14 03:10:30 2021 +0900
+
+    init repository

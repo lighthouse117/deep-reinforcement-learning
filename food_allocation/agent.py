@@ -120,7 +120,6 @@ class Agent:
 
         satisfaction_rates = self.stock / self.REQUEST
         for rate in satisfaction_rates:
-            # print(f"satisfaction = {diff}")
             if rate < 0.5:
                 satisfactions.append(Satisfaction.HARDLY)
             elif rate < 1:
