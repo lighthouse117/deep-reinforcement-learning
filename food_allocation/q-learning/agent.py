@@ -175,7 +175,7 @@ class Agent:
     def check_satisfied(self):
         if np.all(self.current_requests == 0):
             # 要求がすべて満たされたことを記録
-            self.done = True
+            self.food_done = True
             # print(f"{self.name} 要求がすべて満たされました")
 
         # TODO: 食品ごとに調べる（要求があっても食品の在庫がない場合）

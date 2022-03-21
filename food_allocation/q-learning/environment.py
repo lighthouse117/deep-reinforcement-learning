@@ -72,7 +72,7 @@ class Environment:
         # 全てのエージェントが終了条件を満たしているかチェック
         all_done = True
         for agent in self.agents:
-            if not agent.food_done:
+            if not agent.done:
                 all_done = False
                 break
         # 全エージェントの取れる行動がなくなったか
