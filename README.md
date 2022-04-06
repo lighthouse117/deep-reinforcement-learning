@@ -1,2 +1,4 @@
 # Deep Reinforcement Learning
-深層強化学習の実装テスト
+
+フードバンク食品分配問題への
+深層強化学習（DQN）の適用
