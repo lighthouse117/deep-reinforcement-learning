@@ -15,18 +15,18 @@ class LearningParameters:
 
 
 class EnvironmentSettings:
-    # AGENTS_COUNT = 3
-    # FOODS = [20, 20, 20]
-    # NUM_FOODS = len(FOODS)
-    # REQUESTS = [
-    #     [10, 10, 10],
-    #     [5, 10, 5],
-    #     [5, 5, 10],
-    # ]
-
-    AGENTS_COUNT = 1
-    FOODS = [5, 5, 5]
+    AGENTS_COUNT = 3
+    FOODS = [20, 20, 20]
     NUM_FOODS = len(FOODS)
     REQUESTS = [
-        [1, 3, 5],
+        [10, 10, 10],
+        [5, 10, 5],
+        [5, 5, 10],
     ]
+
+    # AGENTS_COUNT = 1
+    # FOODS = [5, 5, 5]
+    # NUM_FOODS = len(FOODS)
+    # REQUESTS = [
+    #     [1, 3, 5],
+    # ]
